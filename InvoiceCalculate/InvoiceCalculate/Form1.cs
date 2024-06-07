@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,13 +18,63 @@ namespace InvoiceCalculate
         bool unreceiptedCollapse;
         bool expenseCollapse;
 
-        private Button btnCurrent;
+        //Fields
+        private IconButton btnCurrent;
+        private Panel btnLeftBorder;
 
         public MainForm()
         {
             InitializeComponent();
+            /**/
+            btnLeftBorder = new Panel();
+            btnLeftBorder.Size = new Size(7, 60);
+            flpSideBar.Controls.Add(btnLeftBorder);
         }
 
+        //Methods
+        private void ActiveButton(object btnSender, Color color)
+        {
+            if (btnSender != null)
+            {
+                //Button
+                btnCurrent = (IconButton)btnSender;
+                btnCurrent.BackColor = Color.FromArgb(30, 48, 58);
+                btnCurrent.ForeColor = color;
+                btnCurrent.TextAlign = ContentAlignment.MiddleCenter;
+                btnCurrent.IconColor = color;
+                btnCurrent.TextImageRelation = TextImageRelation.TextBeforeImage;
+                btnCurrent.ImageAlign = ContentAlignment.MiddleRight;
+                //Left Border Button
+                btnLeftBorder.BackColor = color;
+                btnLeftBorder.Location = new Point(0, btnCurrent.Location.Y);
+                btnLeftBorder.Visible = true;
+                btnLeftBorder.BringToFront();
+            }
+        }
+
+
+        //Button Close-Minimize-Maximize 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnRestore_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        //Timer Menus
         private void tmrSideBar_Tick(object sender, EventArgs e)
         {
             //Set the MINIMUM and MAXIMUM of sidebar panel
@@ -53,25 +104,6 @@ namespace InvoiceCalculate
         {
             //set time interval to lowest to make it smoother
             tmrSideBar.Start();
-        }
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-        private void btnRestore_Click(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-            {
-                WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                WindowState = FormWindowState.Normal;
-            }
-        }
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
         }
 
         private void tmrInvoice_Tick(object sender, EventArgs e)
@@ -157,14 +189,6 @@ namespace InvoiceCalculate
             tmrExpense.Start();
         }
 
-        //<!--------------------------------------------------------->
 
-        private void ActiveButton(object btnSender)
-        {
-            if (btnCurrent != (Button)btnSender)
-            {
-                btnCurrent = (Button)btnSender;
-            }
-        }
     }
 }

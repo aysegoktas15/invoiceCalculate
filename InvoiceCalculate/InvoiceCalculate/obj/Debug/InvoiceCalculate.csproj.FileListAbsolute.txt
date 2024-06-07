@@ -8,3 +8,15 @@ D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCal
 D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.csproj.CoreCompileInputs.cache
 D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.exe
 D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.pdb
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\invoiceCalculate\InvoiceCalculate\InvoiceCalculate\bin\Debug\InvoiceCalculate.exe.config
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\invoiceCalculate\InvoiceCalculate\InvoiceCalculate\bin\Debug\InvoiceCalculate.exe
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\invoiceCalculate\InvoiceCalculate\InvoiceCalculate\bin\Debug\InvoiceCalculate.pdb
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\invoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.csproj.AssemblyReference.cache
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\invoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.MainForm.resources
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\invoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.Properties.Resources.resources
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\invoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.csproj.GenerateResource.cache
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\invoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.csproj.CoreCompileInputs.cache
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\invoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.exe
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\invoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.pdb
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\invoiceCalculate\InvoiceCalculate\InvoiceCalculate\bin\Debug\FontAwesome.Sharp.dll
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\invoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceC.B617C4E0.Up2Date

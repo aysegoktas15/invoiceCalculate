@@ -59,7 +59,7 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.btnExpenseArrange = new System.Windows.Forms.Button();
             this.tmrSideBar = new System.Windows.Forms.Timer(this.components);
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpOptionBar = new System.Windows.Forms.FlowLayoutPanel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnRestore = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
@@ -83,7 +83,7 @@
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.flpOptionBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // flpSideBar
@@ -109,7 +109,7 @@
             this.panel1.Controls.Add(this.picMenu);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(177, 57);
+            this.panel1.Size = new System.Drawing.Size(177, 52);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -138,7 +138,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.btnHome);
-            this.panel2.Location = new System.Drawing.Point(3, 66);
+            this.panel2.Location = new System.Drawing.Point(3, 61);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(180, 44);
             this.panel2.TabIndex = 1;
@@ -167,7 +167,7 @@
             this.flpInvoiceContainer.Controls.Add(this.panel6);
             this.flpInvoiceContainer.Controls.Add(this.panel3);
             this.flpInvoiceContainer.Controls.Add(this.panel8);
-            this.flpInvoiceContainer.Location = new System.Drawing.Point(3, 116);
+            this.flpInvoiceContainer.Location = new System.Drawing.Point(3, 111);
             this.flpInvoiceContainer.MaximumSize = new System.Drawing.Size(180, 120);
             this.flpInvoiceContainer.MinimumSize = new System.Drawing.Size(180, 44);
             this.flpInvoiceContainer.Name = "flpInvoiceContainer";
@@ -259,7 +259,7 @@
             this.flpUnreceiptedContainer.Controls.Add(this.panel4);
             this.flpUnreceiptedContainer.Controls.Add(this.panel10);
             this.flpUnreceiptedContainer.Controls.Add(this.panel11);
-            this.flpUnreceiptedContainer.Location = new System.Drawing.Point(3, 242);
+            this.flpUnreceiptedContainer.Location = new System.Drawing.Point(3, 237);
             this.flpUnreceiptedContainer.MaximumSize = new System.Drawing.Size(180, 120);
             this.flpUnreceiptedContainer.MinimumSize = new System.Drawing.Size(180, 44);
             this.flpUnreceiptedContainer.Name = "flpUnreceiptedContainer";
@@ -352,7 +352,7 @@
             this.flpExpenseContainer.Controls.Add(this.panel13);
             this.flpExpenseContainer.Controls.Add(this.panel14);
             this.flpExpenseContainer.Controls.Add(this.panel15);
-            this.flpExpenseContainer.Location = new System.Drawing.Point(3, 368);
+            this.flpExpenseContainer.Location = new System.Drawing.Point(3, 363);
             this.flpExpenseContainer.MaximumSize = new System.Drawing.Size(180, 160);
             this.flpExpenseContainer.MinimumSize = new System.Drawing.Size(180, 44);
             this.flpExpenseContainer.Name = "flpExpenseContainer";
@@ -469,18 +469,18 @@
             this.tmrSideBar.Interval = 8;
             this.tmrSideBar.Tick += new System.EventHandler(this.tmrSideBar_Tick);
             // 
-            // flowLayoutPanel1
+            // flpOptionBar
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.flowLayoutPanel1.Controls.Add(this.btnClose);
-            this.flowLayoutPanel1.Controls.Add(this.btnRestore);
-            this.flowLayoutPanel1.Controls.Add(this.btnMinimize);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(180, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(800, 30);
-            this.flowLayoutPanel1.TabIndex = 4;
+            this.flpOptionBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
+            this.flpOptionBar.Controls.Add(this.btnClose);
+            this.flpOptionBar.Controls.Add(this.btnRestore);
+            this.flpOptionBar.Controls.Add(this.btnMinimize);
+            this.flpOptionBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flpOptionBar.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flpOptionBar.Location = new System.Drawing.Point(180, 0);
+            this.flpOptionBar.Name = "flpOptionBar";
+            this.flpOptionBar.Size = new System.Drawing.Size(800, 30);
+            this.flpOptionBar.TabIndex = 4;
             // 
             // btnClose
             // 
@@ -548,7 +548,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(980, 680);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flpOptionBar);
             this.Controls.Add(this.flpSideBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
@@ -571,7 +571,7 @@
             this.panel13.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flpOptionBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -594,7 +594,7 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnRestore;
         private System.Windows.Forms.Button btnMinimize;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flpOptionBar;
         private System.Windows.Forms.FlowLayoutPanel flpInvoiceContainer;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnInvoice;
