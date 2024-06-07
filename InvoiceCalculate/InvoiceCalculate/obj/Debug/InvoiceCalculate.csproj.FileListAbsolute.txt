@@ -1,0 +1,10 @@
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\InvoiceCalculate\InvoiceCalculate\bin\Debug\InvoiceCalculate.exe.config
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\InvoiceCalculate\InvoiceCalculate\bin\Debug\InvoiceCalculate.exe
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\InvoiceCalculate\InvoiceCalculate\bin\Debug\InvoiceCalculate.pdb
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.csproj.AssemblyReference.cache
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.Form1.resources
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.Properties.Resources.resources
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.csproj.GenerateResource.cache
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.csproj.CoreCompileInputs.cache
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.exe
+D:\0_AYSE_GOKTAS_\01-DESKTOPFILES\02-WORKS\01-SOFTWARE\02-PROJECTS\05-InvoiceCalculate\InvoiceCalculate\InvoiceCalculate\obj\Debug\InvoiceCalculate.pdb
