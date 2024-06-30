@@ -34,34 +34,23 @@
             this.label1 = new System.Windows.Forms.Label();
             this.picMenu = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.ıconButton3 = new FontAwesome.Sharp.IconButton();
+            this.btnMainPage = new FontAwesome.Sharp.IconButton();
             this.flpInvoiceContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.ıconButton1 = new FontAwesome.Sharp.IconButton();
-            this.ıconButton2 = new FontAwesome.Sharp.IconButton();
-            this.ıconButton4 = new FontAwesome.Sharp.IconButton();
+            this.btnInvoice = new FontAwesome.Sharp.IconButton();
+            this.btnInArrange = new FontAwesome.Sharp.IconButton();
+            this.btnInEdit = new FontAwesome.Sharp.IconButton();
             this.flpUnreceiptedContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.ıconButton5 = new FontAwesome.Sharp.IconButton();
-            this.ıconButton6 = new FontAwesome.Sharp.IconButton();
-            this.ıconButton7 = new FontAwesome.Sharp.IconButton();
+            this.btnUnreceipted = new FontAwesome.Sharp.IconButton();
+            this.btnUnAdd = new FontAwesome.Sharp.IconButton();
+            this.btnUnEdit = new FontAwesome.Sharp.IconButton();
             this.flpExpenseContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.ıconButton8 = new FontAwesome.Sharp.IconButton();
-            this.ıconButton9 = new FontAwesome.Sharp.IconButton();
-            this.ıconButton10 = new FontAwesome.Sharp.IconButton();
-            this.ıconButton11 = new FontAwesome.Sharp.IconButton();
-            this.btnExpenseArrange = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.btnUnreceipted = new System.Windows.Forms.Button();
-            this.btnExpense = new System.Windows.Forms.Button();
-            this.btnExpenseHome = new System.Windows.Forms.Button();
-            this.btnExpenseCar = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btnInvoice = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnInvoiceCreate = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.btnInvoiceArrange = new System.Windows.Forms.Button();
+            this.btnExpense = new FontAwesome.Sharp.IconButton();
+            this.btnExHome = new FontAwesome.Sharp.IconButton();
+            this.btnExCar = new FontAwesome.Sharp.IconButton();
+            this.btnExOther = new FontAwesome.Sharp.IconButton();
+            this.btnExEdit = new FontAwesome.Sharp.IconButton();
             this.tmrSideBar = new System.Windows.Forms.Timer(this.components);
             this.flpOptionBar = new System.Windows.Forms.FlowLayoutPanel();
             this.btnClose = new System.Windows.Forms.Button();
@@ -71,8 +60,6 @@
             this.tmrUnreceipted = new System.Windows.Forms.Timer(this.components);
             this.tmrExpense = new System.Windows.Forms.Timer(this.components);
             this.ıconDropDownButton1 = new FontAwesome.Sharp.IconDropDownButton();
-            this.btnUnreceiptedArrange = new System.Windows.Forms.Button();
-            this.btnUnreceiptedAdd = new System.Windows.Forms.Button();
             this.flpSideBar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenu)).BeginInit();
@@ -82,9 +69,6 @@
             this.panel4.SuspendLayout();
             this.flpExpenseContainer.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.flpOptionBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -139,36 +123,38 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.ıconButton3);
+            this.panel2.Controls.Add(this.btnMainPage);
             this.panel2.Location = new System.Drawing.Point(3, 61);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(180, 44);
             this.panel2.TabIndex = 1;
             // 
-            // ıconButton3
+            // btnMainPage
             // 
-            this.ıconButton3.FlatAppearance.BorderSize = 0;
-            this.ıconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButton3.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ıconButton3.ForeColor = System.Drawing.Color.White;
-            this.ıconButton3.IconChar = FontAwesome.Sharp.IconChar.Cube;
-            this.ıconButton3.IconColor = System.Drawing.Color.White;
-            this.ıconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButton3.IconSize = 30;
-            this.ıconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton3.Location = new System.Drawing.Point(3, 0);
-            this.ıconButton3.Name = "ıconButton3";
-            this.ıconButton3.Size = new System.Drawing.Size(174, 44);
-            this.ıconButton3.TabIndex = 8;
-            this.ıconButton3.Text = "ANA SAYFA";
-            this.ıconButton3.UseVisualStyleBackColor = true;
+            this.btnMainPage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMainPage.FlatAppearance.BorderSize = 0;
+            this.btnMainPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMainPage.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnMainPage.ForeColor = System.Drawing.Color.White;
+            this.btnMainPage.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.btnMainPage.IconColor = System.Drawing.Color.White;
+            this.btnMainPage.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMainPage.IconSize = 30;
+            this.btnMainPage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMainPage.Location = new System.Drawing.Point(0, 0);
+            this.btnMainPage.Name = "btnMainPage";
+            this.btnMainPage.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnMainPage.Size = new System.Drawing.Size(180, 44);
+            this.btnMainPage.TabIndex = 8;
+            this.btnMainPage.Text = "ANA SAYFA";
+            this.btnMainPage.UseVisualStyleBackColor = true;
             // 
             // flpInvoiceContainer
             // 
             this.flpInvoiceContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.flpInvoiceContainer.Controls.Add(this.ıconButton1);
-            this.flpInvoiceContainer.Controls.Add(this.ıconButton2);
-            this.flpInvoiceContainer.Controls.Add(this.ıconButton4);
+            this.flpInvoiceContainer.Controls.Add(this.btnInvoice);
+            this.flpInvoiceContainer.Controls.Add(this.btnInArrange);
+            this.flpInvoiceContainer.Controls.Add(this.btnInEdit);
             this.flpInvoiceContainer.Location = new System.Drawing.Point(3, 111);
             this.flpInvoiceContainer.MaximumSize = new System.Drawing.Size(180, 120);
             this.flpInvoiceContainer.MinimumSize = new System.Drawing.Size(180, 44);
@@ -176,74 +162,78 @@
             this.flpInvoiceContainer.Size = new System.Drawing.Size(180, 120);
             this.flpInvoiceContainer.TabIndex = 5;
             // 
-            // ıconButton1
+            // btnInvoice
             // 
-            this.ıconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ıconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ıconButton1.FlatAppearance.BorderSize = 0;
-            this.ıconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButton1.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ıconButton1.ForeColor = System.Drawing.Color.White;
-            this.ıconButton1.IconChar = FontAwesome.Sharp.IconChar.Cube;
-            this.ıconButton1.IconColor = System.Drawing.Color.White;
-            this.ıconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButton1.IconSize = 30;
-            this.ıconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton1.Location = new System.Drawing.Point(3, 3);
-            this.ıconButton1.Name = "ıconButton1";
-            this.ıconButton1.Size = new System.Drawing.Size(174, 44);
-            this.ıconButton1.TabIndex = 8;
-            this.ıconButton1.Text = "FATURA";
-            this.ıconButton1.UseVisualStyleBackColor = false;
+            this.btnInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnInvoice.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInvoice.FlatAppearance.BorderSize = 0;
+            this.btnInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInvoice.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnInvoice.ForeColor = System.Drawing.Color.White;
+            this.btnInvoice.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnInvoice.IconColor = System.Drawing.Color.White;
+            this.btnInvoice.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnInvoice.IconSize = 30;
+            this.btnInvoice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInvoice.Location = new System.Drawing.Point(3, 3);
+            this.btnInvoice.Name = "btnInvoice";
+            this.btnInvoice.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnInvoice.Size = new System.Drawing.Size(174, 44);
+            this.btnInvoice.TabIndex = 8;
+            this.btnInvoice.Text = "FATURA";
+            this.btnInvoice.UseVisualStyleBackColor = false;
+            this.btnInvoice.Click += new System.EventHandler(this.btnInvoice_Click);
             // 
-            // ıconButton2
+            // btnInArrange
             // 
-            this.ıconButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ıconButton2.FlatAppearance.BorderSize = 0;
-            this.ıconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButton2.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ıconButton2.ForeColor = System.Drawing.Color.White;
-            this.ıconButton2.IconChar = FontAwesome.Sharp.IconChar.Cube;
-            this.ıconButton2.IconColor = System.Drawing.Color.White;
-            this.ıconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButton2.IconSize = 24;
-            this.ıconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton2.Location = new System.Drawing.Point(3, 53);
-            this.ıconButton2.Name = "ıconButton2";
-            this.ıconButton2.Size = new System.Drawing.Size(177, 30);
-            this.ıconButton2.TabIndex = 8;
-            this.ıconButton2.Text = "FATURA KES";
-            this.ıconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ıconButton2.UseVisualStyleBackColor = true;
+            this.btnInArrange.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInArrange.FlatAppearance.BorderSize = 0;
+            this.btnInArrange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInArrange.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnInArrange.ForeColor = System.Drawing.Color.White;
+            this.btnInArrange.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnInArrange.IconColor = System.Drawing.Color.White;
+            this.btnInArrange.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnInArrange.IconSize = 24;
+            this.btnInArrange.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInArrange.Location = new System.Drawing.Point(3, 53);
+            this.btnInArrange.Name = "btnInArrange";
+            this.btnInArrange.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnInArrange.Size = new System.Drawing.Size(177, 30);
+            this.btnInArrange.TabIndex = 8;
+            this.btnInArrange.Text = "FATURA KES";
+            this.btnInArrange.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInArrange.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnInArrange.UseVisualStyleBackColor = true;
             // 
-            // ıconButton4
+            // btnInEdit
             // 
-            this.ıconButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ıconButton4.FlatAppearance.BorderSize = 0;
-            this.ıconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButton4.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ıconButton4.ForeColor = System.Drawing.Color.White;
-            this.ıconButton4.IconChar = FontAwesome.Sharp.IconChar.Cube;
-            this.ıconButton4.IconColor = System.Drawing.Color.White;
-            this.ıconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButton4.IconSize = 24;
-            this.ıconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton4.Location = new System.Drawing.Point(3, 89);
-            this.ıconButton4.Name = "ıconButton4";
-            this.ıconButton4.Size = new System.Drawing.Size(177, 30);
-            this.ıconButton4.TabIndex = 8;
-            this.ıconButton4.Text = "FATURA DÜZENLE";
-            this.ıconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ıconButton4.UseVisualStyleBackColor = true;
+            this.btnInEdit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInEdit.FlatAppearance.BorderSize = 0;
+            this.btnInEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInEdit.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnInEdit.ForeColor = System.Drawing.Color.White;
+            this.btnInEdit.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnInEdit.IconColor = System.Drawing.Color.White;
+            this.btnInEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnInEdit.IconSize = 24;
+            this.btnInEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInEdit.Location = new System.Drawing.Point(3, 89);
+            this.btnInEdit.Name = "btnInEdit";
+            this.btnInEdit.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnInEdit.Size = new System.Drawing.Size(177, 30);
+            this.btnInEdit.TabIndex = 8;
+            this.btnInEdit.Text = "FATURA DÜZENLE";
+            this.btnInEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnInEdit.UseVisualStyleBackColor = true;
             // 
             // flpUnreceiptedContainer
             // 
             this.flpUnreceiptedContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
             this.flpUnreceiptedContainer.Controls.Add(this.panel4);
-            this.flpUnreceiptedContainer.Controls.Add(this.ıconButton6);
-            this.flpUnreceiptedContainer.Controls.Add(this.ıconButton7);
+            this.flpUnreceiptedContainer.Controls.Add(this.btnUnAdd);
+            this.flpUnreceiptedContainer.Controls.Add(this.btnUnEdit);
             this.flpUnreceiptedContainer.Location = new System.Drawing.Point(3, 237);
             this.flpUnreceiptedContainer.MaximumSize = new System.Drawing.Size(180, 120);
             this.flpUnreceiptedContainer.MinimumSize = new System.Drawing.Size(180, 44);
@@ -253,367 +243,210 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.ıconButton5);
+            this.panel4.Controls.Add(this.btnUnreceipted);
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(177, 44);
             this.panel4.TabIndex = 3;
             // 
-            // ıconButton5
+            // btnUnreceipted
             // 
-            this.ıconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ıconButton5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ıconButton5.FlatAppearance.BorderSize = 0;
-            this.ıconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButton5.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ıconButton5.ForeColor = System.Drawing.Color.White;
-            this.ıconButton5.IconChar = FontAwesome.Sharp.IconChar.Cube;
-            this.ıconButton5.IconColor = System.Drawing.Color.White;
-            this.ıconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButton5.IconSize = 30;
-            this.ıconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton5.Location = new System.Drawing.Point(0, 0);
-            this.ıconButton5.Name = "ıconButton5";
-            this.ıconButton5.Size = new System.Drawing.Size(177, 44);
-            this.ıconButton5.TabIndex = 9;
-            this.ıconButton5.Text = "GELİR";
-            this.ıconButton5.UseVisualStyleBackColor = false;
+            this.btnUnreceipted.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnUnreceipted.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUnreceipted.FlatAppearance.BorderSize = 0;
+            this.btnUnreceipted.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUnreceipted.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnUnreceipted.ForeColor = System.Drawing.Color.White;
+            this.btnUnreceipted.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnUnreceipted.IconColor = System.Drawing.Color.White;
+            this.btnUnreceipted.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUnreceipted.IconSize = 30;
+            this.btnUnreceipted.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUnreceipted.Location = new System.Drawing.Point(0, 0);
+            this.btnUnreceipted.Name = "btnUnreceipted";
+            this.btnUnreceipted.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnUnreceipted.Size = new System.Drawing.Size(177, 44);
+            this.btnUnreceipted.TabIndex = 9;
+            this.btnUnreceipted.Text = "GELİR";
+            this.btnUnreceipted.UseVisualStyleBackColor = false;
+            this.btnUnreceipted.Click += new System.EventHandler(this.btnUnreceipted_Click);
             // 
-            // ıconButton6
+            // btnUnAdd
             // 
-            this.ıconButton6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ıconButton6.FlatAppearance.BorderSize = 0;
-            this.ıconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButton6.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ıconButton6.ForeColor = System.Drawing.Color.White;
-            this.ıconButton6.IconChar = FontAwesome.Sharp.IconChar.Cube;
-            this.ıconButton6.IconColor = System.Drawing.Color.White;
-            this.ıconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButton6.IconSize = 24;
-            this.ıconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton6.Location = new System.Drawing.Point(3, 53);
-            this.ıconButton6.Name = "ıconButton6";
-            this.ıconButton6.Size = new System.Drawing.Size(177, 30);
-            this.ıconButton6.TabIndex = 9;
-            this.ıconButton6.Text = "GELİR EKLE";
-            this.ıconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ıconButton6.UseVisualStyleBackColor = true;
+            this.btnUnAdd.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUnAdd.FlatAppearance.BorderSize = 0;
+            this.btnUnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUnAdd.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnUnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnUnAdd.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnUnAdd.IconColor = System.Drawing.Color.White;
+            this.btnUnAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUnAdd.IconSize = 24;
+            this.btnUnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUnAdd.Location = new System.Drawing.Point(3, 53);
+            this.btnUnAdd.Name = "btnUnAdd";
+            this.btnUnAdd.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnUnAdd.Size = new System.Drawing.Size(177, 30);
+            this.btnUnAdd.TabIndex = 9;
+            this.btnUnAdd.Text = "GELİR EKLE";
+            this.btnUnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUnAdd.UseVisualStyleBackColor = true;
             // 
-            // ıconButton7
+            // btnUnEdit
             // 
-            this.ıconButton7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ıconButton7.FlatAppearance.BorderSize = 0;
-            this.ıconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButton7.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ıconButton7.ForeColor = System.Drawing.Color.White;
-            this.ıconButton7.IconChar = FontAwesome.Sharp.IconChar.Cube;
-            this.ıconButton7.IconColor = System.Drawing.Color.White;
-            this.ıconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButton7.IconSize = 24;
-            this.ıconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton7.Location = new System.Drawing.Point(3, 89);
-            this.ıconButton7.Name = "ıconButton7";
-            this.ıconButton7.Size = new System.Drawing.Size(177, 30);
-            this.ıconButton7.TabIndex = 10;
-            this.ıconButton7.Text = "GELİR DÜZENLE";
-            this.ıconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ıconButton7.UseVisualStyleBackColor = true;
+            this.btnUnEdit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUnEdit.FlatAppearance.BorderSize = 0;
+            this.btnUnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUnEdit.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnUnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnUnEdit.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnUnEdit.IconColor = System.Drawing.Color.White;
+            this.btnUnEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUnEdit.IconSize = 24;
+            this.btnUnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUnEdit.Location = new System.Drawing.Point(3, 89);
+            this.btnUnEdit.Name = "btnUnEdit";
+            this.btnUnEdit.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnUnEdit.Size = new System.Drawing.Size(177, 30);
+            this.btnUnEdit.TabIndex = 10;
+            this.btnUnEdit.Text = "GELİR DÜZENLE";
+            this.btnUnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUnEdit.UseVisualStyleBackColor = true;
             // 
             // flpExpenseContainer
             // 
             this.flpExpenseContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
             this.flpExpenseContainer.Controls.Add(this.panel5);
-            this.flpExpenseContainer.Controls.Add(this.ıconButton9);
-            this.flpExpenseContainer.Controls.Add(this.ıconButton10);
-            this.flpExpenseContainer.Controls.Add(this.ıconButton11);
+            this.flpExpenseContainer.Controls.Add(this.btnExHome);
+            this.flpExpenseContainer.Controls.Add(this.btnExCar);
+            this.flpExpenseContainer.Controls.Add(this.btnExOther);
+            this.flpExpenseContainer.Controls.Add(this.btnExEdit);
             this.flpExpenseContainer.Location = new System.Drawing.Point(3, 363);
-            this.flpExpenseContainer.MaximumSize = new System.Drawing.Size(180, 160);
+            this.flpExpenseContainer.MaximumSize = new System.Drawing.Size(180, 400);
             this.flpExpenseContainer.MinimumSize = new System.Drawing.Size(180, 44);
             this.flpExpenseContainer.Name = "flpExpenseContainer";
-            this.flpExpenseContainer.Size = new System.Drawing.Size(180, 160);
+            this.flpExpenseContainer.Size = new System.Drawing.Size(180, 206);
             this.flpExpenseContainer.TabIndex = 10;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.ıconButton8);
+            this.panel5.Controls.Add(this.btnExpense);
             this.panel5.Location = new System.Drawing.Point(3, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(177, 44);
             this.panel5.TabIndex = 4;
             // 
-            // ıconButton8
-            // 
-            this.ıconButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ıconButton8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ıconButton8.FlatAppearance.BorderSize = 0;
-            this.ıconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButton8.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ıconButton8.ForeColor = System.Drawing.Color.White;
-            this.ıconButton8.IconChar = FontAwesome.Sharp.IconChar.Cube;
-            this.ıconButton8.IconColor = System.Drawing.Color.White;
-            this.ıconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButton8.IconSize = 30;
-            this.ıconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton8.Location = new System.Drawing.Point(0, 0);
-            this.ıconButton8.Name = "ıconButton8";
-            this.ıconButton8.Size = new System.Drawing.Size(177, 44);
-            this.ıconButton8.TabIndex = 10;
-            this.ıconButton8.Text = "HARCAMA";
-            this.ıconButton8.UseVisualStyleBackColor = false;
-            // 
-            // ıconButton9
-            // 
-            this.ıconButton9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ıconButton9.FlatAppearance.BorderSize = 0;
-            this.ıconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButton9.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ıconButton9.ForeColor = System.Drawing.Color.White;
-            this.ıconButton9.IconChar = FontAwesome.Sharp.IconChar.Cube;
-            this.ıconButton9.IconColor = System.Drawing.Color.White;
-            this.ıconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButton9.IconSize = 24;
-            this.ıconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton9.Location = new System.Drawing.Point(3, 53);
-            this.ıconButton9.Name = "ıconButton9";
-            this.ıconButton9.Size = new System.Drawing.Size(177, 30);
-            this.ıconButton9.TabIndex = 10;
-            this.ıconButton9.Text = "GİDER / EV";
-            this.ıconButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ıconButton9.UseVisualStyleBackColor = true;
-            // 
-            // ıconButton10
-            // 
-            this.ıconButton10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ıconButton10.FlatAppearance.BorderSize = 0;
-            this.ıconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButton10.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ıconButton10.ForeColor = System.Drawing.Color.White;
-            this.ıconButton10.IconChar = FontAwesome.Sharp.IconChar.Cube;
-            this.ıconButton10.IconColor = System.Drawing.Color.White;
-            this.ıconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButton10.IconSize = 24;
-            this.ıconButton10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton10.Location = new System.Drawing.Point(3, 89);
-            this.ıconButton10.Name = "ıconButton10";
-            this.ıconButton10.Size = new System.Drawing.Size(177, 30);
-            this.ıconButton10.TabIndex = 11;
-            this.ıconButton10.Text = "GİDER / ARABA";
-            this.ıconButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ıconButton10.UseVisualStyleBackColor = true;
-            // 
-            // ıconButton11
-            // 
-            this.ıconButton11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ıconButton11.FlatAppearance.BorderSize = 0;
-            this.ıconButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButton11.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
-            this.ıconButton11.ForeColor = System.Drawing.Color.White;
-            this.ıconButton11.IconChar = FontAwesome.Sharp.IconChar.Cube;
-            this.ıconButton11.IconColor = System.Drawing.Color.White;
-            this.ıconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButton11.IconSize = 24;
-            this.ıconButton11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton11.Location = new System.Drawing.Point(3, 125);
-            this.ıconButton11.Name = "ıconButton11";
-            this.ıconButton11.Size = new System.Drawing.Size(177, 30);
-            this.ıconButton11.TabIndex = 12;
-            this.ıconButton11.Text = "GİDER DÜZENLE";
-            this.ıconButton11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ıconButton11.UseVisualStyleBackColor = true;
-            // 
-            // btnExpenseArrange
-            // 
-            this.btnExpenseArrange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.btnExpenseArrange.FlatAppearance.BorderSize = 0;
-            this.btnExpenseArrange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExpenseArrange.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnExpenseArrange.ForeColor = System.Drawing.Color.White;
-            this.btnExpenseArrange.Image = global::InvoiceCalculate.Properties.Resources.circle_solid_12;
-            this.btnExpenseArrange.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExpenseArrange.Location = new System.Drawing.Point(754, 452);
-            this.btnExpenseArrange.Name = "btnExpenseArrange";
-            this.btnExpenseArrange.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnExpenseArrange.Size = new System.Drawing.Size(177, 30);
-            this.btnExpenseArrange.TabIndex = 2;
-            this.btnExpenseArrange.Text = "   DÜZENLE";
-            this.btnExpenseArrange.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExpenseArrange.UseVisualStyleBackColor = false;
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::InvoiceCalculate.Properties.Resources.home_png1;
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(581, 187);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnHome.Size = new System.Drawing.Size(180, 44);
-            this.btnHome.TabIndex = 2;
-            this.btnHome.Text = "    ANA SAYFA";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.UseVisualStyleBackColor = false;
-            // 
-            // btnUnreceipted
-            // 
-            this.btnUnreceipted.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnUnreceipted.FlatAppearance.BorderSize = 0;
-            this.btnUnreceipted.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUnreceipted.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnUnreceipted.ForeColor = System.Drawing.Color.White;
-            this.btnUnreceipted.Image = global::InvoiceCalculate.Properties.Resources.income_png;
-            this.btnUnreceipted.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUnreceipted.Location = new System.Drawing.Point(431, 318);
-            this.btnUnreceipted.Name = "btnUnreceipted";
-            this.btnUnreceipted.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnUnreceipted.Size = new System.Drawing.Size(180, 44);
-            this.btnUnreceipted.TabIndex = 2;
-            this.btnUnreceipted.Text = "    GELİR";
-            this.btnUnreceipted.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUnreceipted.UseVisualStyleBackColor = false;
-            this.btnUnreceipted.Click += new System.EventHandler(this.btnUnreceipted_Click);
-            // 
             // btnExpense
             // 
             this.btnExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnExpense.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnExpense.FlatAppearance.BorderSize = 0;
             this.btnExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExpense.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnExpense.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnExpense.ForeColor = System.Drawing.Color.White;
-            this.btnExpense.Image = global::InvoiceCalculate.Properties.Resources.credit_card_png;
+            this.btnExpense.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnExpense.IconColor = System.Drawing.Color.White;
+            this.btnExpense.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExpense.IconSize = 30;
             this.btnExpense.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExpense.Location = new System.Drawing.Point(495, 416);
+            this.btnExpense.Location = new System.Drawing.Point(0, 0);
             this.btnExpense.Name = "btnExpense";
-            this.btnExpense.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnExpense.Size = new System.Drawing.Size(180, 44);
-            this.btnExpense.TabIndex = 2;
-            this.btnExpense.Text = "    HARCAMA";
-            this.btnExpense.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExpense.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnExpense.Size = new System.Drawing.Size(177, 44);
+            this.btnExpense.TabIndex = 10;
+            this.btnExpense.Text = "HARCAMA";
             this.btnExpense.UseVisualStyleBackColor = false;
             this.btnExpense.Click += new System.EventHandler(this.btnExpense_Click);
             // 
-            // btnExpenseHome
+            // btnExHome
             // 
-            this.btnExpenseHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.btnExpenseHome.FlatAppearance.BorderSize = 0;
-            this.btnExpenseHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExpenseHome.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnExpenseHome.ForeColor = System.Drawing.Color.White;
-            this.btnExpenseHome.Image = global::InvoiceCalculate.Properties.Resources.circle_solid_12;
-            this.btnExpenseHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExpenseHome.Location = new System.Drawing.Point(722, 318);
-            this.btnExpenseHome.Name = "btnExpenseHome";
-            this.btnExpenseHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnExpenseHome.Size = new System.Drawing.Size(177, 30);
-            this.btnExpenseHome.TabIndex = 2;
-            this.btnExpenseHome.Text = "   EV";
-            this.btnExpenseHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExpenseHome.UseVisualStyleBackColor = false;
+            this.btnExHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExHome.FlatAppearance.BorderSize = 0;
+            this.btnExHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExHome.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnExHome.ForeColor = System.Drawing.Color.White;
+            this.btnExHome.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnExHome.IconColor = System.Drawing.Color.White;
+            this.btnExHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExHome.IconSize = 24;
+            this.btnExHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExHome.Location = new System.Drawing.Point(3, 53);
+            this.btnExHome.Name = "btnExHome";
+            this.btnExHome.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnExHome.Size = new System.Drawing.Size(177, 30);
+            this.btnExHome.TabIndex = 10;
+            this.btnExHome.Text = "GİDER / EV";
+            this.btnExHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExHome.UseVisualStyleBackColor = true;
             // 
-            // btnExpenseCar
+            // btnExCar
             // 
-            this.btnExpenseCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.btnExpenseCar.FlatAppearance.BorderSize = 0;
-            this.btnExpenseCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExpenseCar.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnExpenseCar.ForeColor = System.Drawing.Color.White;
-            this.btnExpenseCar.Image = global::InvoiceCalculate.Properties.Resources.circle_solid_12;
-            this.btnExpenseCar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExpenseCar.Location = new System.Drawing.Point(768, 395);
-            this.btnExpenseCar.Name = "btnExpenseCar";
-            this.btnExpenseCar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnExpenseCar.Size = new System.Drawing.Size(177, 30);
-            this.btnExpenseCar.TabIndex = 2;
-            this.btnExpenseCar.Text = "   ARABA";
-            this.btnExpenseCar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExpenseCar.UseVisualStyleBackColor = false;
+            this.btnExCar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExCar.FlatAppearance.BorderSize = 0;
+            this.btnExCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExCar.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnExCar.ForeColor = System.Drawing.Color.White;
+            this.btnExCar.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnExCar.IconColor = System.Drawing.Color.White;
+            this.btnExCar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExCar.IconSize = 24;
+            this.btnExCar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExCar.Location = new System.Drawing.Point(3, 89);
+            this.btnExCar.Name = "btnExCar";
+            this.btnExCar.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnExCar.Size = new System.Drawing.Size(177, 30);
+            this.btnExCar.TabIndex = 11;
+            this.btnExCar.Text = "GİDER / ARABA";
+            this.btnExCar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExCar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExCar.UseVisualStyleBackColor = true;
             // 
-            // panel6
+            // btnExOther
             // 
-            this.panel6.Controls.Add(this.btnInvoice);
-            this.panel6.Location = new System.Drawing.Point(483, 111);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(177, 44);
-            this.panel6.TabIndex = 6;
+            this.btnExOther.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExOther.FlatAppearance.BorderSize = 0;
+            this.btnExOther.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExOther.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnExOther.ForeColor = System.Drawing.Color.White;
+            this.btnExOther.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnExOther.IconColor = System.Drawing.Color.White;
+            this.btnExOther.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExOther.IconSize = 24;
+            this.btnExOther.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExOther.Location = new System.Drawing.Point(3, 125);
+            this.btnExOther.Name = "btnExOther";
+            this.btnExOther.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnExOther.Size = new System.Drawing.Size(177, 35);
+            this.btnExOther.TabIndex = 12;
+            this.btnExOther.Text = "GİDER / DİĞER";
+            this.btnExOther.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExOther.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExOther.UseVisualStyleBackColor = true;
             // 
-            // btnInvoice
+            // btnExEdit
             // 
-            this.btnInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnInvoice.FlatAppearance.BorderSize = 0;
-            this.btnInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInvoice.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnInvoice.ForeColor = System.Drawing.Color.White;
-            this.btnInvoice.Image = global::InvoiceCalculate.Properties.Resources.invoice_png;
-            this.btnInvoice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInvoice.Location = new System.Drawing.Point(12, 0);
-            this.btnInvoice.Name = "btnInvoice";
-            this.btnInvoice.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnInvoice.Size = new System.Drawing.Size(180, 47);
-            this.btnInvoice.TabIndex = 2;
-            this.btnInvoice.Text = "    FATURA";
-            this.btnInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInvoice.UseVisualStyleBackColor = false;
-            this.btnInvoice.Click += new System.EventHandler(this.btnInvoice_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnInvoiceCreate);
-            this.panel3.Location = new System.Drawing.Point(319, 209);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(177, 30);
-            this.panel3.TabIndex = 2;
-            // 
-            // btnInvoiceCreate
-            // 
-            this.btnInvoiceCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.btnInvoiceCreate.FlatAppearance.BorderSize = 0;
-            this.btnInvoiceCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInvoiceCreate.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnInvoiceCreate.ForeColor = System.Drawing.Color.White;
-            this.btnInvoiceCreate.Image = global::InvoiceCalculate.Properties.Resources.circle_solid_12;
-            this.btnInvoiceCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInvoiceCreate.Location = new System.Drawing.Point(0, 0);
-            this.btnInvoiceCreate.Name = "btnInvoiceCreate";
-            this.btnInvoiceCreate.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnInvoiceCreate.Size = new System.Drawing.Size(177, 30);
-            this.btnInvoiceCreate.TabIndex = 2;
-            this.btnInvoiceCreate.Text = "   FATURA KES";
-            this.btnInvoiceCreate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInvoiceCreate.UseVisualStyleBackColor = false;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.btnInvoiceArrange);
-            this.panel8.Location = new System.Drawing.Point(251, 136);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(177, 30);
-            this.panel8.TabIndex = 7;
-            // 
-            // btnInvoiceArrange
-            // 
-            this.btnInvoiceArrange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.btnInvoiceArrange.FlatAppearance.BorderSize = 0;
-            this.btnInvoiceArrange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInvoiceArrange.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnInvoiceArrange.ForeColor = System.Drawing.Color.White;
-            this.btnInvoiceArrange.Image = global::InvoiceCalculate.Properties.Resources.circle_solid_12;
-            this.btnInvoiceArrange.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInvoiceArrange.Location = new System.Drawing.Point(3, 3);
-            this.btnInvoiceArrange.Name = "btnInvoiceArrange";
-            this.btnInvoiceArrange.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnInvoiceArrange.Size = new System.Drawing.Size(177, 30);
-            this.btnInvoiceArrange.TabIndex = 2;
-            this.btnInvoiceArrange.Text = "   FATURA DÜZENLE";
-            this.btnInvoiceArrange.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInvoiceArrange.UseVisualStyleBackColor = false;
+            this.btnExEdit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExEdit.FlatAppearance.BorderSize = 0;
+            this.btnExEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExEdit.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnExEdit.ForeColor = System.Drawing.Color.White;
+            this.btnExEdit.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnExEdit.IconColor = System.Drawing.Color.White;
+            this.btnExEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExEdit.IconSize = 24;
+            this.btnExEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExEdit.Location = new System.Drawing.Point(3, 166);
+            this.btnExEdit.Name = "btnExEdit";
+            this.btnExEdit.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnExEdit.Size = new System.Drawing.Size(177, 35);
+            this.btnExEdit.TabIndex = 13;
+            this.btnExEdit.Text = "GİDER DÜZENLE";
+            this.btnExEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExEdit.UseVisualStyleBackColor = true;
             // 
             // tmrSideBar
             // 
@@ -702,59 +535,12 @@
             this.ıconDropDownButton1.Size = new System.Drawing.Size(23, 23);
             this.ıconDropDownButton1.Text = "ıconDropDownButton1";
             // 
-            // btnUnreceiptedArrange
-            // 
-            this.btnUnreceiptedArrange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.btnUnreceiptedArrange.FlatAppearance.BorderSize = 0;
-            this.btnUnreceiptedArrange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUnreceiptedArrange.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnUnreceiptedArrange.ForeColor = System.Drawing.Color.White;
-            this.btnUnreceiptedArrange.Image = global::InvoiceCalculate.Properties.Resources.circle_solid_12;
-            this.btnUnreceiptedArrange.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUnreceiptedArrange.Location = new System.Drawing.Point(251, 374);
-            this.btnUnreceiptedArrange.Name = "btnUnreceiptedArrange";
-            this.btnUnreceiptedArrange.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnUnreceiptedArrange.Size = new System.Drawing.Size(177, 30);
-            this.btnUnreceiptedArrange.TabIndex = 2;
-            this.btnUnreceiptedArrange.Text = "   GELİR DÜZENLE";
-            this.btnUnreceiptedArrange.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUnreceiptedArrange.UseVisualStyleBackColor = false;
-            // 
-            // btnUnreceiptedAdd
-            // 
-            this.btnUnreceiptedAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.btnUnreceiptedAdd.FlatAppearance.BorderSize = 0;
-            this.btnUnreceiptedAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUnreceiptedAdd.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnUnreceiptedAdd.ForeColor = System.Drawing.Color.White;
-            this.btnUnreceiptedAdd.Image = global::InvoiceCalculate.Properties.Resources.circle_solid_12;
-            this.btnUnreceiptedAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUnreceiptedAdd.Location = new System.Drawing.Point(254, 332);
-            this.btnUnreceiptedAdd.Name = "btnUnreceiptedAdd";
-            this.btnUnreceiptedAdd.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnUnreceiptedAdd.Size = new System.Drawing.Size(177, 30);
-            this.btnUnreceiptedAdd.TabIndex = 2;
-            this.btnUnreceiptedAdd.Text = "   GELİR EKLE";
-            this.btnUnreceiptedAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUnreceiptedAdd.UseVisualStyleBackColor = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(980, 680);
-            this.Controls.Add(this.btnExpenseArrange);
-            this.Controls.Add(this.btnExpenseCar);
-            this.Controls.Add(this.btnExpenseHome);
-            this.Controls.Add(this.btnExpense);
-            this.Controls.Add(this.btnUnreceiptedArrange);
-            this.Controls.Add(this.btnUnreceiptedAdd);
-            this.Controls.Add(this.btnUnreceipted);
-            this.Controls.Add(this.btnHome);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel6);
             this.Controls.Add(this.flpOptionBar);
             this.Controls.Add(this.flpSideBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -770,9 +556,6 @@
             this.panel4.ResumeLayout(false);
             this.flpExpenseContainer.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
             this.flpOptionBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -782,13 +565,8 @@
 
         private System.Windows.Forms.FlowLayoutPanel flpSideBar;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnInvoiceCreate;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnUnreceipted;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnExpense;
         private System.Windows.Forms.PictureBox picMenu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer tmrSideBar;
@@ -797,33 +575,25 @@
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.FlowLayoutPanel flpOptionBar;
         private System.Windows.Forms.FlowLayoutPanel flpInvoiceContainer;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button btnInvoice;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button btnInvoiceArrange;
         private System.Windows.Forms.Timer tmrInvoice;
         private System.Windows.Forms.FlowLayoutPanel flpUnreceiptedContainer;
         private System.Windows.Forms.Timer tmrUnreceipted;
         private System.Windows.Forms.FlowLayoutPanel flpExpenseContainer;
-        private System.Windows.Forms.Button btnExpenseHome;
-        private System.Windows.Forms.Button btnExpenseCar;
-        private System.Windows.Forms.Button btnExpenseArrange;
         private System.Windows.Forms.Timer tmrExpense;
-        private FontAwesome.Sharp.IconButton ıconButton1;
-        private FontAwesome.Sharp.IconButton ıconButton2;
+        private FontAwesome.Sharp.IconButton btnInvoice;
+        private FontAwesome.Sharp.IconButton btnInArrange;
         private System.Windows.Forms.Panel panel2;
-        private FontAwesome.Sharp.IconButton ıconButton3;
+        private FontAwesome.Sharp.IconButton btnMainPage;
         private FontAwesome.Sharp.IconDropDownButton ıconDropDownButton1;
-        private FontAwesome.Sharp.IconButton ıconButton4;
-        private FontAwesome.Sharp.IconButton ıconButton5;
-        private FontAwesome.Sharp.IconButton ıconButton6;
-        private FontAwesome.Sharp.IconButton ıconButton7;
-        private FontAwesome.Sharp.IconButton ıconButton8;
-        private System.Windows.Forms.Button btnUnreceiptedArrange;
-        private System.Windows.Forms.Button btnUnreceiptedAdd;
-        private FontAwesome.Sharp.IconButton ıconButton9;
-        private FontAwesome.Sharp.IconButton ıconButton10;
-        private FontAwesome.Sharp.IconButton ıconButton11;
+        private FontAwesome.Sharp.IconButton btnInEdit;
+        private FontAwesome.Sharp.IconButton btnUnreceipted;
+        private FontAwesome.Sharp.IconButton btnUnAdd;
+        private FontAwesome.Sharp.IconButton btnUnEdit;
+        private FontAwesome.Sharp.IconButton btnExpense;
+        private FontAwesome.Sharp.IconButton btnExHome;
+        private FontAwesome.Sharp.IconButton btnExCar;
+        private FontAwesome.Sharp.IconButton btnExOther;
+        private FontAwesome.Sharp.IconButton btnExEdit;
     }
 }
 

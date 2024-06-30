@@ -149,7 +149,6 @@ namespace InvoiceCalculate
                 }
             }
         }
-
         private void btnInvoice_Click(object sender, EventArgs e)
         {
             //set time interval to lowest to make it smoother
@@ -206,13 +205,12 @@ namespace InvoiceCalculate
                 }
             }
         }
-
         private void btnExpense_Click(object sender, EventArgs e)
         {
             //set time interval to lowest to make it smoother
             tmrExpense.Start();
             btnActive(sender, RGBColors.color3);
         }
-
+        
     }
 }
