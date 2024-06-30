@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media;
+using Color = System.Drawing.Color;
 
 namespace InvoiceCalculate
 {
@@ -30,28 +32,48 @@ namespace InvoiceCalculate
             btnLeftBorder.Size = new Size(7, 60);
             flpSideBar.Controls.Add(btnLeftBorder);
         }
+        //Structs
+        private struct RGBColors
+        {
+            public static Color color1 = Color.FromArgb(255, 105, 180);
+            public static Color color2 = Color.FromArgb(255, 182, 193);
+            public static Color color3 = Color.FromArgb(255, 192, 203);
+        }
 
         //Methods
-        private void ActiveButton(object btnSender, Color color)
+        private void btnActive(object btnSender, Color color)
         {
             if (btnSender != null)
             {
+                btnDisable();
                 //Button
-                btnCurrent = (IconButton)btnSender;
-                btnCurrent.BackColor = Color.FromArgb(30, 48, 58);
-                btnCurrent.ForeColor = color;
-                btnCurrent.TextAlign = ContentAlignment.MiddleCenter;
-                btnCurrent.IconColor = color;
-                btnCurrent.TextImageRelation = TextImageRelation.TextBeforeImage;
-                btnCurrent.ImageAlign = ContentAlignment.MiddleRight;
+                btnCurrent = (IconButton)btnSender; // Cast the sender to IconButton
+                btnCurrent.BackColor = Color.FromArgb(30, 48, 58); // Set background color
+                btnCurrent.ForeColor = color; // Set text color
+                btnCurrent.TextAlign = ContentAlignment.MiddleCenter; // Center the text
+                btnCurrent.IconColor = color; // Set icon color
+                btnCurrent.TextImageRelation = TextImageRelation.TextBeforeImage; // Place text before icon
+                btnCurrent.ImageAlign = ContentAlignment.MiddleRight; // Align icon to the right
+
                 //Left Border Button
-                btnLeftBorder.BackColor = color;
-                btnLeftBorder.Location = new Point(0, btnCurrent.Location.Y);
-                btnLeftBorder.Visible = true;
-                btnLeftBorder.BringToFront();
+                btnLeftBorder.BackColor = color; // Set left border color
+                btnLeftBorder.Location = new Point(0, btnCurrent.Location.Y); // Align border with button
+                btnLeftBorder.Visible = true; // Make border visible
+                btnLeftBorder.BringToFront(); // Bring border to front of other controls
             }
         }
-
+        private void btnDisable()
+        {
+            if(btnCurrent != null)
+            {
+                btnCurrent.BackColor = Color.FromArgb(30, 40, 48); // Set background color
+                btnCurrent.ForeColor = Color.White; // Set text color
+                btnCurrent.TextAlign = ContentAlignment.MiddleLeft; // Left the text
+                btnCurrent.IconColor = Color.White; // Set icon color
+                btnCurrent.TextImageRelation = TextImageRelation.ImageBeforeText; // Place text before icon
+                btnCurrent.ImageAlign = ContentAlignment.MiddleLeft; // Align icon to the left
+            }
+        }
 
         //Button Close-Minimize-Maximize 
         private void btnClose_Click(object sender, EventArgs e)
@@ -132,6 +154,7 @@ namespace InvoiceCalculate
         {
             //set time interval to lowest to make it smoother
             tmrInvoice.Start();
+            btnActive(sender, RGBColors.color1);
         }
 
         private void tmrUnreceipted_Tick(object sender, EventArgs e)
@@ -159,6 +182,7 @@ namespace InvoiceCalculate
         {
             //set time interval to lowest to make it smoother
             tmrUnreceipted.Start();
+            btnActive(sender, RGBColors.color2);
         }
 
         private void tmrExpense_Tick(object sender, EventArgs e)
@@ -187,8 +211,8 @@ namespace InvoiceCalculate
         {
             //set time interval to lowest to make it smoother
             tmrExpense.Start();
+            btnActive(sender, RGBColors.color3);
         }
-
 
     }
 }
