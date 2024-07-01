@@ -83,8 +83,8 @@
             this.flpSideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.flpSideBar.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flpSideBar.Location = new System.Drawing.Point(0, 0);
-            this.flpSideBar.MaximumSize = new System.Drawing.Size(180, 900);
-            this.flpSideBar.MinimumSize = new System.Drawing.Size(50, 540);
+            this.flpSideBar.MaximumSize = new System.Drawing.Size(180, 980);
+            this.flpSideBar.MinimumSize = new System.Drawing.Size(49, 540);
             this.flpSideBar.Name = "flpSideBar";
             this.flpSideBar.Size = new System.Drawing.Size(180, 680);
             this.flpSideBar.TabIndex = 0;
@@ -136,7 +136,7 @@
             this.btnMainPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMainPage.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnMainPage.ForeColor = System.Drawing.Color.White;
-            this.btnMainPage.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.btnMainPage.IconChar = FontAwesome.Sharp.IconChar.House;
             this.btnMainPage.IconColor = System.Drawing.Color.White;
             this.btnMainPage.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMainPage.IconSize = 30;
@@ -170,7 +170,7 @@
             this.btnInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInvoice.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnInvoice.ForeColor = System.Drawing.Color.White;
-            this.btnInvoice.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnInvoice.IconChar = FontAwesome.Sharp.IconChar.FileInvoice;
             this.btnInvoice.IconColor = System.Drawing.Color.White;
             this.btnInvoice.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnInvoice.IconSize = 30;
@@ -191,7 +191,7 @@
             this.btnInArrange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInArrange.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
             this.btnInArrange.ForeColor = System.Drawing.Color.White;
-            this.btnInArrange.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnInArrange.IconChar = FontAwesome.Sharp.IconChar.FileText;
             this.btnInArrange.IconColor = System.Drawing.Color.White;
             this.btnInArrange.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnInArrange.IconSize = 24;
@@ -213,7 +213,7 @@
             this.btnInEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInEdit.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
             this.btnInEdit.ForeColor = System.Drawing.Color.White;
-            this.btnInEdit.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnInEdit.IconChar = FontAwesome.Sharp.IconChar.FileEdit;
             this.btnInEdit.IconColor = System.Drawing.Color.White;
             this.btnInEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnInEdit.IconSize = 24;
@@ -257,7 +257,7 @@
             this.btnUnreceipted.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUnreceipted.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnUnreceipted.ForeColor = System.Drawing.Color.White;
-            this.btnUnreceipted.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnUnreceipted.IconChar = FontAwesome.Sharp.IconChar.MoneyBill1Wave;
             this.btnUnreceipted.IconColor = System.Drawing.Color.White;
             this.btnUnreceipted.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUnreceipted.IconSize = 30;
@@ -278,7 +278,7 @@
             this.btnUnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUnAdd.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
             this.btnUnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnUnAdd.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnUnAdd.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
             this.btnUnAdd.IconColor = System.Drawing.Color.White;
             this.btnUnAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUnAdd.IconSize = 24;
@@ -300,7 +300,7 @@
             this.btnUnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUnEdit.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
             this.btnUnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnUnEdit.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnUnEdit.IconChar = FontAwesome.Sharp.IconChar.PenToSquare;
             this.btnUnEdit.IconColor = System.Drawing.Color.White;
             this.btnUnEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUnEdit.IconSize = 24;
@@ -346,7 +346,7 @@
             this.btnExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExpense.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnExpense.ForeColor = System.Drawing.Color.White;
-            this.btnExpense.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnExpense.IconChar = FontAwesome.Sharp.IconChar.Outdent;
             this.btnExpense.IconColor = System.Drawing.Color.White;
             this.btnExpense.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExpense.IconSize = 30;
@@ -367,7 +367,7 @@
             this.btnExHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExHome.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
             this.btnExHome.ForeColor = System.Drawing.Color.White;
-            this.btnExHome.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnExHome.IconChar = FontAwesome.Sharp.IconChar.HouseCircleCheck;
             this.btnExHome.IconColor = System.Drawing.Color.White;
             this.btnExHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExHome.IconSize = 24;
@@ -389,7 +389,7 @@
             this.btnExCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExCar.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
             this.btnExCar.ForeColor = System.Drawing.Color.White;
-            this.btnExCar.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnExCar.IconChar = FontAwesome.Sharp.IconChar.CarAlt;
             this.btnExCar.IconColor = System.Drawing.Color.White;
             this.btnExCar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExCar.IconSize = 24;
@@ -411,7 +411,7 @@
             this.btnExOther.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExOther.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
             this.btnExOther.ForeColor = System.Drawing.Color.White;
-            this.btnExOther.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnExOther.IconChar = FontAwesome.Sharp.IconChar.Otter;
             this.btnExOther.IconColor = System.Drawing.Color.White;
             this.btnExOther.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExOther.IconSize = 24;
@@ -433,7 +433,7 @@
             this.btnExEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExEdit.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
             this.btnExEdit.ForeColor = System.Drawing.Color.White;
-            this.btnExEdit.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            this.btnExEdit.IconChar = FontAwesome.Sharp.IconChar.PenToSquare;
             this.btnExEdit.IconColor = System.Drawing.Color.White;
             this.btnExEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExEdit.IconSize = 24;
