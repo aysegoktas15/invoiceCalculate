@@ -20,6 +20,14 @@ namespace InvoiceCalculate
         bool unreceiptedCollapse;
         bool expenseCollapse;
 
+        //Counters
+        int countSideBar = 0;
+        int countHomePageClick = 0;
+        int countInvoiceClick = 0;
+        int countUnreceiptedClick = 0;
+        int countExpenseClick = 0;
+
+
         //Fields
         private IconButton btnCurrent;
         private Panel btnLeftBorder;
@@ -27,7 +35,6 @@ namespace InvoiceCalculate
         public MainForm()
         {
             InitializeComponent();
-            /**/
             btnLeftBorder = new Panel();
             btnLeftBorder.Size = new Size(7, 60);
             flpSideBar.Controls.Add(btnLeftBorder);
@@ -35,6 +42,7 @@ namespace InvoiceCalculate
         //Structs
         private struct RGBColors
         {
+            public static Color color0 = Color.FromArgb(255, 255, 255);
             public static Color color1 = Color.FromArgb(255, 105, 180);
             public static Color color2 = Color.FromArgb(255, 182, 193);
             public static Color color3 = Color.FromArgb(255, 192, 203);
@@ -122,95 +130,178 @@ namespace InvoiceCalculate
             }
         }
 
+        private void tmrTickHeight()
+        {
+            tmrInvoice.Stop();
+            tmrUnreceipted.Stop();
+            tmrExpense.Stop();
+
+            // Collapse all panels
+            if (!invoiceCollapse)
+            {
+                flpInvoiceContainer.Height = flpInvoiceContainer.MinimumSize.Height;
+                invoiceCollapse = true;
+            }
+            if (!unreceiptedCollapse)
+            {
+                flpUnreceiptedContainer.Height = flpUnreceiptedContainer.MinimumSize.Height;
+                unreceiptedCollapse = true;
+            }
+            if (!expenseCollapse)
+            {
+                flpExpenseContainer.Height = flpExpenseContainer.MinimumSize.Height;
+                expenseCollapse = true;
+            }
+        }
+        private void tmrTickWidth()
+        {
+            // Collapse all panels
+            btnMainPage.Width = btnMainPage.MinimumSize.Width;
+
+            if (!invoiceCollapse)
+            {
+                flpInvoiceContainer.Width = flpInvoiceContainer.MinimumSize.Width;
+                invoiceCollapse = true;
+            }
+            if (!unreceiptedCollapse)
+            {
+                flpUnreceiptedContainer.Width = flpUnreceiptedContainer.MinimumSize.Width;
+                unreceiptedCollapse = true;
+            }
+            if (!expenseCollapse)
+            {
+                flpExpenseContainer.Width = flpExpenseContainer.MinimumSize.Width;
+                expenseCollapse = true;
+            }
+        }
+
         private void picMenu_Click(object sender, EventArgs e)
         {
-            //set time interval to lowest to make it smoother
-            tmrSideBar.Start();
+            countSideBar++;
+            if (countSideBar % 2  == 0)
+            {
+                tmrTickWidth();
+                tmrTickHeight();
+                btnDisable();
+            }
+            else
+            {
+                //set time interval to lowest to make it smoother
+                tmrSideBar.Start();
+            }
+        }
+
+        private void btnMainPage_Click(object sender, EventArgs e)
+        {
+            countHomePageClick++;
+            tmrTickHeight();
+
+            if (countHomePageClick %2 == 0)
+            {
+                btnDisable();
+            }
+            else
+            {
+                btnActive(sender, RGBColors.color0);
+            }
+            countInvoiceClick = 0;
+            countExpenseClick = 0;
+            countUnreceiptedClick = 0;
         }
 
         private void tmrInvoice_Tick(object sender, EventArgs e)
         {
-            if(invoiceCollapse)
+            TogglePanel(ref invoiceCollapse, flpInvoiceContainer, tmrInvoice);
+        }
+        
+        private void btnInvoice_Click(object sender, EventArgs e)
+        {
+            countInvoiceClick++;
+            tmrTickHeight();
+
+            if (countInvoiceClick % 2 == 0)
             {
-                flpInvoiceContainer.Height += 10;
-                if(flpInvoiceContainer.Height == flpInvoiceContainer.MaximumSize.Height)
-                {
-                    invoiceCollapse = false;
-                    tmrInvoice.Stop();
-                }
+                btnDisable();
             }
             else
             {
-                flpInvoiceContainer.Height -= 10;
-                if (flpInvoiceContainer.Height == flpInvoiceContainer.MinimumSize.Height)
-                {
-                    invoiceCollapse=true;
-                    tmrInvoice.Stop();
-                }
+                //set time interval to lowest to make it smoother
+                tmrInvoice.Start();
+                btnActive(sender, RGBColors.color1);
             }
-        }
-        private void btnInvoice_Click(object sender, EventArgs e)
-        {
-            //set time interval to lowest to make it smoother
-            tmrInvoice.Start();
-            btnActive(sender, RGBColors.color1);
+            countHomePageClick = 0;
+            countUnreceiptedClick = 0;
+            countExpenseClick = 0;
         }
 
         private void tmrUnreceipted_Tick(object sender, EventArgs e)
         {
-            if (unreceiptedCollapse)
-            {
-                flpUnreceiptedContainer.Height += 10;
-                if (flpUnreceiptedContainer.Height == flpUnreceiptedContainer.MaximumSize.Height)
-                {
-                    unreceiptedCollapse = false;
-                    tmrUnreceipted.Stop();
-                }
-            }
-            else
-            {
-                flpUnreceiptedContainer.Height -= 10;
-                if (flpUnreceiptedContainer.Height == flpUnreceiptedContainer.MinimumSize.Height)
-                {
-                    unreceiptedCollapse = true;
-                    tmrUnreceipted.Stop();
-                }
-            }
+            TogglePanel(ref unreceiptedCollapse, flpUnreceiptedContainer, tmrUnreceipted);
         }
         private void btnUnreceipted_Click(object sender, EventArgs e)
         {
-            //set time interval to lowest to make it smoother
-            tmrUnreceipted.Start();
-            btnActive(sender, RGBColors.color2);
+            countUnreceiptedClick++;
+            tmrTickHeight();
+
+            if (countUnreceiptedClick % 2 == 0)
+            {
+                btnDisable();
+            }
+            else
+            {
+                //set time interval to lowest to make it smoother
+                tmrUnreceipted.Start();
+                btnActive(sender, RGBColors.color2);
+            }
+            countHomePageClick = 0;
+            countInvoiceClick = 0;
+            countExpenseClick = 0;
         }
 
         private void tmrExpense_Tick(object sender, EventArgs e)
         {
-            if (expenseCollapse)
+            TogglePanel(ref expenseCollapse, flpExpenseContainer, tmrExpense);
+        }
+        private void btnExpense_Click(object sender, EventArgs e)
+        {
+            countExpenseClick++;
+            tmrTickHeight();
+
+            if (countExpenseClick % 2 == 0)
             {
-                flpExpenseContainer.Height += 10;
-                if (flpExpenseContainer.Height == flpExpenseContainer.MaximumSize.Height)
+                btnDisable();
+            }
+            else
+            {
+                //set time interval to lowest to make it smoother
+                tmrExpense.Start();
+                btnActive(sender, RGBColors.color3);
+            }
+            countHomePageClick = 0;
+            countInvoiceClick = 0;
+            countUnreceiptedClick = 0;
+        }
+
+        private void TogglePanel(ref bool collapse, FlowLayoutPanel panel, Timer timer)
+        {
+            if (collapse)
+            {
+                panel.Height += 10;
+                if (panel.Height >= panel.MaximumSize.Height)
                 {
-                    expenseCollapse = false;
-                    tmrExpense.Stop();
+                    collapse = false;
+                    timer.Stop();
                 }
             }
             else
             {
-                flpExpenseContainer.Height -= 10;
-                if (flpExpenseContainer.Height == flpExpenseContainer.MinimumSize.Height)
+                panel.Height -= 10;
+                if (panel.Height <= panel.MinimumSize.Height)
                 {
-                    expenseCollapse = true;
-                    tmrExpense.Stop();
+                    collapse = true;
+                    timer.Stop();
                 }
             }
         }
-        private void btnExpense_Click(object sender, EventArgs e)
-        {
-            //set time interval to lowest to make it smoother
-            tmrExpense.Start();
-            btnActive(sender, RGBColors.color3);
-        }
-        
     }
 }

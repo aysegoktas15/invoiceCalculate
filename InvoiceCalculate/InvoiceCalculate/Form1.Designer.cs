@@ -47,8 +47,8 @@
             this.flpExpenseContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnExpense = new FontAwesome.Sharp.IconButton();
-            this.btnExHome = new FontAwesome.Sharp.IconButton();
             this.btnExCar = new FontAwesome.Sharp.IconButton();
+            this.btnExHome = new FontAwesome.Sharp.IconButton();
             this.btnExOther = new FontAwesome.Sharp.IconButton();
             this.btnExEdit = new FontAwesome.Sharp.IconButton();
             this.tmrSideBar = new System.Windows.Forms.Timer(this.components);
@@ -86,7 +86,7 @@
             this.flpSideBar.MaximumSize = new System.Drawing.Size(180, 980);
             this.flpSideBar.MinimumSize = new System.Drawing.Size(49, 540);
             this.flpSideBar.Name = "flpSideBar";
-            this.flpSideBar.Size = new System.Drawing.Size(180, 680);
+            this.flpSideBar.Size = new System.Drawing.Size(49, 680);
             this.flpSideBar.TabIndex = 0;
             // 
             // panel1
@@ -148,6 +148,7 @@
             this.btnMainPage.TabIndex = 8;
             this.btnMainPage.Text = "ANA SAYFA";
             this.btnMainPage.UseVisualStyleBackColor = true;
+            this.btnMainPage.Click += new System.EventHandler(this.btnMainPage_Click);
             // 
             // flpInvoiceContainer
             // 
@@ -157,9 +158,9 @@
             this.flpInvoiceContainer.Controls.Add(this.btnInEdit);
             this.flpInvoiceContainer.Location = new System.Drawing.Point(3, 111);
             this.flpInvoiceContainer.MaximumSize = new System.Drawing.Size(180, 120);
-            this.flpInvoiceContainer.MinimumSize = new System.Drawing.Size(180, 44);
+            this.flpInvoiceContainer.MinimumSize = new System.Drawing.Size(180, 50);
             this.flpInvoiceContainer.Name = "flpInvoiceContainer";
-            this.flpInvoiceContainer.Size = new System.Drawing.Size(180, 120);
+            this.flpInvoiceContainer.Size = new System.Drawing.Size(180, 50);
             this.flpInvoiceContainer.TabIndex = 5;
             // 
             // btnInvoice
@@ -234,11 +235,11 @@
             this.flpUnreceiptedContainer.Controls.Add(this.panel4);
             this.flpUnreceiptedContainer.Controls.Add(this.btnUnAdd);
             this.flpUnreceiptedContainer.Controls.Add(this.btnUnEdit);
-            this.flpUnreceiptedContainer.Location = new System.Drawing.Point(3, 237);
+            this.flpUnreceiptedContainer.Location = new System.Drawing.Point(3, 167);
             this.flpUnreceiptedContainer.MaximumSize = new System.Drawing.Size(180, 120);
-            this.flpUnreceiptedContainer.MinimumSize = new System.Drawing.Size(180, 44);
+            this.flpUnreceiptedContainer.MinimumSize = new System.Drawing.Size(180, 50);
             this.flpUnreceiptedContainer.Name = "flpUnreceiptedContainer";
-            this.flpUnreceiptedContainer.Size = new System.Drawing.Size(180, 120);
+            this.flpUnreceiptedContainer.Size = new System.Drawing.Size(180, 50);
             this.flpUnreceiptedContainer.TabIndex = 9;
             // 
             // panel4
@@ -319,23 +320,24 @@
             // 
             this.flpExpenseContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
             this.flpExpenseContainer.Controls.Add(this.panel5);
-            this.flpExpenseContainer.Controls.Add(this.btnExHome);
             this.flpExpenseContainer.Controls.Add(this.btnExCar);
+            this.flpExpenseContainer.Controls.Add(this.btnExHome);
             this.flpExpenseContainer.Controls.Add(this.btnExOther);
             this.flpExpenseContainer.Controls.Add(this.btnExEdit);
-            this.flpExpenseContainer.Location = new System.Drawing.Point(3, 363);
-            this.flpExpenseContainer.MaximumSize = new System.Drawing.Size(180, 400);
-            this.flpExpenseContainer.MinimumSize = new System.Drawing.Size(180, 44);
+            this.flpExpenseContainer.Location = new System.Drawing.Point(3, 223);
+            this.flpExpenseContainer.MaximumSize = new System.Drawing.Size(180, 210);
+            this.flpExpenseContainer.MinimumSize = new System.Drawing.Size(180, 50);
             this.flpExpenseContainer.Name = "flpExpenseContainer";
-            this.flpExpenseContainer.Size = new System.Drawing.Size(180, 206);
+            this.flpExpenseContainer.Size = new System.Drawing.Size(180, 50);
             this.flpExpenseContainer.TabIndex = 10;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.btnExpense);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(3, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(177, 44);
+            this.panel5.Size = new System.Drawing.Size(177, 43);
             this.panel5.TabIndex = 4;
             // 
             // btnExpense
@@ -360,28 +362,6 @@
             this.btnExpense.UseVisualStyleBackColor = false;
             this.btnExpense.Click += new System.EventHandler(this.btnExpense_Click);
             // 
-            // btnExHome
-            // 
-            this.btnExHome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExHome.FlatAppearance.BorderSize = 0;
-            this.btnExHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExHome.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
-            this.btnExHome.ForeColor = System.Drawing.Color.White;
-            this.btnExHome.IconChar = FontAwesome.Sharp.IconChar.HouseCircleCheck;
-            this.btnExHome.IconColor = System.Drawing.Color.White;
-            this.btnExHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExHome.IconSize = 24;
-            this.btnExHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExHome.Location = new System.Drawing.Point(3, 53);
-            this.btnExHome.Name = "btnExHome";
-            this.btnExHome.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.btnExHome.Size = new System.Drawing.Size(177, 30);
-            this.btnExHome.TabIndex = 10;
-            this.btnExHome.Text = "GİDER / EV";
-            this.btnExHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExHome.UseVisualStyleBackColor = true;
-            // 
             // btnExCar
             // 
             this.btnExCar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -394,7 +374,7 @@
             this.btnExCar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExCar.IconSize = 24;
             this.btnExCar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExCar.Location = new System.Drawing.Point(3, 89);
+            this.btnExCar.Location = new System.Drawing.Point(3, 52);
             this.btnExCar.Name = "btnExCar";
             this.btnExCar.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.btnExCar.Size = new System.Drawing.Size(177, 30);
@@ -403,6 +383,28 @@
             this.btnExCar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExCar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExCar.UseVisualStyleBackColor = true;
+            // 
+            // btnExHome
+            // 
+            this.btnExHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExHome.FlatAppearance.BorderSize = 0;
+            this.btnExHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExHome.Font = new System.Drawing.Font("RomanD", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnExHome.ForeColor = System.Drawing.Color.White;
+            this.btnExHome.IconChar = FontAwesome.Sharp.IconChar.HouseCircleCheck;
+            this.btnExHome.IconColor = System.Drawing.Color.White;
+            this.btnExHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExHome.IconSize = 24;
+            this.btnExHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExHome.Location = new System.Drawing.Point(3, 88);
+            this.btnExHome.Name = "btnExHome";
+            this.btnExHome.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnExHome.Size = new System.Drawing.Size(177, 30);
+            this.btnExHome.TabIndex = 10;
+            this.btnExHome.Text = "GİDER / EV";
+            this.btnExHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExHome.UseVisualStyleBackColor = true;
             // 
             // btnExOther
             // 
@@ -416,7 +418,7 @@
             this.btnExOther.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExOther.IconSize = 24;
             this.btnExOther.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExOther.Location = new System.Drawing.Point(3, 125);
+            this.btnExOther.Location = new System.Drawing.Point(3, 124);
             this.btnExOther.Name = "btnExOther";
             this.btnExOther.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.btnExOther.Size = new System.Drawing.Size(177, 35);
@@ -438,7 +440,7 @@
             this.btnExEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExEdit.IconSize = 24;
             this.btnExEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExEdit.Location = new System.Drawing.Point(3, 166);
+            this.btnExEdit.Location = new System.Drawing.Point(3, 165);
             this.btnExEdit.Name = "btnExEdit";
             this.btnExEdit.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.btnExEdit.Size = new System.Drawing.Size(177, 35);
@@ -461,9 +463,9 @@
             this.flpOptionBar.Controls.Add(this.btnMinimize);
             this.flpOptionBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.flpOptionBar.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flpOptionBar.Location = new System.Drawing.Point(180, 0);
+            this.flpOptionBar.Location = new System.Drawing.Point(49, 0);
             this.flpOptionBar.Name = "flpOptionBar";
-            this.flpOptionBar.Size = new System.Drawing.Size(800, 30);
+            this.flpOptionBar.Size = new System.Drawing.Size(931, 30);
             this.flpOptionBar.TabIndex = 4;
             // 
             // btnClose
@@ -474,7 +476,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnClose.Image = global::InvoiceCalculate.Properties.Resources.x_regular_24;
-            this.btnClose.Location = new System.Drawing.Point(757, 3);
+            this.btnClose.Location = new System.Drawing.Point(888, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(40, 25);
             this.btnClose.TabIndex = 1;
@@ -489,7 +491,7 @@
             this.btnRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestore.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnRestore.Image = global::InvoiceCalculate.Properties.Resources.windows_regular_20;
-            this.btnRestore.Location = new System.Drawing.Point(711, 3);
+            this.btnRestore.Location = new System.Drawing.Point(842, 3);
             this.btnRestore.Name = "btnRestore";
             this.btnRestore.Size = new System.Drawing.Size(40, 25);
             this.btnRestore.TabIndex = 2;
@@ -504,7 +506,7 @@
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnMinimize.Image = global::InvoiceCalculate.Properties.Resources.minus_regular_24;
-            this.btnMinimize.Location = new System.Drawing.Point(665, 3);
+            this.btnMinimize.Location = new System.Drawing.Point(796, 3);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(40, 25);
             this.btnMinimize.TabIndex = 3;
