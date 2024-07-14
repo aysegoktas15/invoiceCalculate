@@ -27,6 +27,7 @@ namespace InvoiceCalculate
         int countUnreceiptedClick = 0;
         int countExpenseClick = 0;
 
+        
 
         //Fields
         private IconButton btnCurrent;
@@ -81,6 +82,20 @@ namespace InvoiceCalculate
                 btnCurrent.TextImageRelation = TextImageRelation.ImageBeforeText; // Place text before icon
                 btnCurrent.ImageAlign = ContentAlignment.MiddleLeft; // Align icon to the left
             }
+        }
+        private void btnAbled()
+        {
+            btnMainPage.Enabled = true;
+            btnInvoice.Enabled = true;
+            btnUnreceipted.Enabled = true;
+            btnExpense.Enabled = true;
+        }
+        private void btnEnabled()
+        {
+            btnMainPage.Enabled = false;
+            btnInvoice.Enabled = false;
+            btnUnreceipted.Enabled = false;
+            btnExpense.Enabled = false;
         }
 
         //Button Close-Minimize-Maximize 
@@ -177,18 +192,41 @@ namespace InvoiceCalculate
 
         private void picMenu_Click(object sender, EventArgs e)
         {
-            countSideBar++;
-            if (countSideBar % 2  == 0)
+            //countSideBar++;
+            //if (countSideBar % 2  == 0)
+            //{
+            //    tmrTickWidth();
+            //    tmrTickHeight();
+            //    tmrSideBar.Stop();
+            //    btnDisable();
+            //    countHomePageClick = 0;
+            //    countInvoiceClick = 0;
+            //    countExpenseClick = 0;
+            //    countUnreceiptedClick = 0;
+            //    btnEnabled();
+            //}
+            //else
+            //{
+            //    btnAbled();
+            //    //set time interval to lowest to make it smoother
+            //    tmrSideBar.Start();
+            //}
+            // Yan menüyü aç veya kapat
+            if (sideBarExpand)
             {
                 tmrTickWidth();
                 tmrTickHeight();
-                btnDisable();
+                tmrSideBar.Stop();
             }
             else
             {
-                //set time interval to lowest to make it smoother
+                btnAbled();
                 tmrSideBar.Start();
             }
+
+            // Durumu değiştir
+            sideBarExpand = !sideBarExpand;
+
         }
 
         private void btnMainPage_Click(object sender, EventArgs e)

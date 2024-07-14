@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.flpSideBar = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.picMenu = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnMainPage = new FontAwesome.Sharp.IconButton();
             this.flpInvoiceContainer = new System.Windows.Forms.FlowLayoutPanel();
@@ -60,9 +57,10 @@
             this.tmrUnreceipted = new System.Windows.Forms.Timer(this.components);
             this.tmrExpense = new System.Windows.Forms.Timer(this.components);
             this.ıconDropDownButton1 = new FontAwesome.Sharp.IconDropDownButton();
+            this.picMenu = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.flpSideBar.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMenu)).BeginInit();
             this.panel2.SuspendLayout();
             this.flpInvoiceContainer.SuspendLayout();
             this.flpUnreceiptedContainer.SuspendLayout();
@@ -70,6 +68,8 @@
             this.flpExpenseContainer.SuspendLayout();
             this.panel5.SuspendLayout();
             this.flpOptionBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMenu)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flpSideBar
@@ -89,38 +89,6 @@
             this.flpSideBar.Size = new System.Drawing.Size(49, 680);
             this.flpSideBar.TabIndex = 0;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.picMenu);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(177, 52);
-            this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(45, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "MENÜ";
-            // 
-            // picMenu
-            // 
-            this.picMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMenu.Image = global::InvoiceCalculate.Properties.Resources.menu_png;
-            this.picMenu.Location = new System.Drawing.Point(9, 3);
-            this.picMenu.Name = "picMenu";
-            this.picMenu.Size = new System.Drawing.Size(30, 26);
-            this.picMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picMenu.TabIndex = 0;
-            this.picMenu.TabStop = false;
-            this.picMenu.Click += new System.EventHandler(this.picMenu_Click);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnMainPage);
@@ -132,6 +100,7 @@
             // btnMainPage
             // 
             this.btnMainPage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMainPage.Enabled = false;
             this.btnMainPage.FlatAppearance.BorderSize = 0;
             this.btnMainPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMainPage.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
@@ -167,6 +136,7 @@
             // 
             this.btnInvoice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnInvoice.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInvoice.Enabled = false;
             this.btnInvoice.FlatAppearance.BorderSize = 0;
             this.btnInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInvoice.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
@@ -254,6 +224,7 @@
             // 
             this.btnUnreceipted.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnUnreceipted.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUnreceipted.Enabled = false;
             this.btnUnreceipted.FlatAppearance.BorderSize = 0;
             this.btnUnreceipted.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUnreceipted.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
@@ -344,6 +315,7 @@
             // 
             this.btnExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnExpense.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExpense.Enabled = false;
             this.btnExpense.FlatAppearance.BorderSize = 0;
             this.btnExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExpense.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
@@ -537,6 +509,38 @@
             this.ıconDropDownButton1.Size = new System.Drawing.Size(23, 23);
             this.ıconDropDownButton1.Text = "ıconDropDownButton1";
             // 
+            // picMenu
+            // 
+            this.picMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picMenu.Image = global::InvoiceCalculate.Properties.Resources.menu_png;
+            this.picMenu.Location = new System.Drawing.Point(9, 3);
+            this.picMenu.Name = "picMenu";
+            this.picMenu.Size = new System.Drawing.Size(30, 26);
+            this.picMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMenu.TabIndex = 0;
+            this.picMenu.TabStop = false;
+            this.picMenu.Click += new System.EventHandler(this.picMenu_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("RomanD", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(45, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 19);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "MENÜ";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.picMenu);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(46, 52);
+            this.panel1.TabIndex = 0;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -549,9 +553,6 @@
             this.Name = "MainForm";
             this.Text = "Main Form";
             this.flpSideBar.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMenu)).EndInit();
             this.panel2.ResumeLayout(false);
             this.flpInvoiceContainer.ResumeLayout(false);
             this.flpUnreceiptedContainer.ResumeLayout(false);
@@ -559,6 +560,9 @@
             this.flpExpenseContainer.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.flpOptionBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picMenu)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -566,11 +570,8 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flpSideBar;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox picMenu;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer tmrSideBar;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnRestore;
@@ -596,6 +597,9 @@
         private FontAwesome.Sharp.IconButton btnExCar;
         private FontAwesome.Sharp.IconButton btnExOther;
         private FontAwesome.Sharp.IconButton btnExEdit;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox picMenu;
     }
 }
 
