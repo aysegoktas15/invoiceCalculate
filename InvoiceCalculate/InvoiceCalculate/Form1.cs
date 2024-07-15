@@ -15,7 +15,7 @@ namespace InvoiceCalculate
 {
     public partial class MainForm : Form
     {
-        bool sideBarExpand;
+        bool sideBarExpand = false;
         bool invoiceCollapse;
         bool unreceiptedCollapse;
         bool expenseCollapse;
@@ -222,6 +222,7 @@ namespace InvoiceCalculate
             {
                 btnAbled();
                 tmrSideBar.Start();
+                sideBarExpand = true;
             }
 
             // Durumu değiştir
