@@ -7,15 +7,17 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Media;
 using Color = System.Drawing.Color;
+using Panel = System.Windows.Forms.Panel;
 
 namespace InvoiceCalculate
 {
     public partial class MainForm : Form
     {
-        bool sideBarExpand = false;
+        bool sideBarCollapse;
         bool invoiceCollapse;
         bool unreceiptedCollapse;
         bool expenseCollapse;
@@ -124,25 +126,24 @@ namespace InvoiceCalculate
         {
             //Set the MINIMUM and MAXIMUM of sidebar panel
 
-            if (sideBarExpand)
-            {
-                //if sidebar is expand,minimize
-                flpSideBar.Width = -10;
-                if (flpSideBar.Width == flpSideBar.MinimumSize.Width)
-                {
-                    sideBarExpand = false;
-                    tmrSideBar.Stop();
-                }
-            }
-            else
-            {
-                flpSideBar.Width += 10;
-                if (flpSideBar.Width == flpSideBar.MaximumSize.Width)
-                {
-                    sideBarExpand = true;
-                    tmrSideBar.Stop();
-                }
-            }
+            //if (sideBarCollapse)
+            //{
+            //    flpSideBar.Height += 10;
+            //    if (flpSideBar.Height >= flpSideBar.MaximumSize.Height)
+            //    {
+            //        sideBarCollapse = true;
+            //        tmrSideBar.Stop();
+            //    }
+            //}
+            //else
+            //{
+            //    flpSideBar.Height -= 10;
+            //    if (flpSideBar.Height <= flpSideBar.MinimumSize.Height)
+            //    {
+            //        sideBarCollapse = false;
+            //        tmrSideBar.Stop();
+            //    }
+            //}
         }
 
         private void tmrTickHeight()
@@ -192,42 +193,26 @@ namespace InvoiceCalculate
 
         private void picMenu_Click(object sender, EventArgs e)
         {
-            //countSideBar++;
-            //if (countSideBar % 2  == 0)
-            //{
-            //    tmrTickWidth();
-            //    tmrTickHeight();
-            //    tmrSideBar.Stop();
-            //    btnDisable();
-            //    countHomePageClick = 0;
-            //    countInvoiceClick = 0;
-            //    countExpenseClick = 0;
-            //    countUnreceiptedClick = 0;
-            //    btnEnabled();
-            //}
-            //else
-            //{
-            //    btnAbled();
-            //    //set time interval to lowest to make it smoother
-            //    tmrSideBar.Start();
-            //}
-            // Yan menüyü aç veya kapat
-            if (sideBarExpand)
+            countSideBar++;
+            if (countSideBar % 2 == 0)
             {
                 tmrTickWidth();
                 tmrTickHeight();
+                btnDisable();
+                btnEnabled();
+                countSideBar = 0;
                 tmrSideBar.Stop();
             }
             else
             {
                 btnAbled();
+                //set time interval to lowest to make it smoother
                 tmrSideBar.Start();
-                sideBarExpand = true;
             }
-
-            // Durumu değiştir
-            sideBarExpand = !sideBarExpand;
-
+            countHomePageClick = 0;
+            countInvoiceClick = 0;
+            countExpenseClick = 0;
+            countUnreceiptedClick = 0;
         }
 
         private void btnMainPage_Click(object sender, EventArgs e)
