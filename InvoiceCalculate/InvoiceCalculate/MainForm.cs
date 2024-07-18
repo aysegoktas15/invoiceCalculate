@@ -11,6 +11,7 @@ using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Media;
 using Color = System.Drawing.Color;
+using Control = System.Windows.Forms.Control;
 using Panel = System.Windows.Forms.Panel;
 
 namespace InvoiceCalculate
@@ -92,7 +93,7 @@ namespace InvoiceCalculate
             btnUnreceipted.Enabled = true;
             btnExpense.Enabled = true;
         }
-        private void btnEnabled()
+        private void btnDisabled()
         {
             btnMainPage.Enabled = false;
             btnInvoice.Enabled = false;
@@ -124,28 +125,26 @@ namespace InvoiceCalculate
         //Timer Menus
         private void tmrSideBar_Tick(object sender, EventArgs e)
         {
-            //Set the MINIMUM and MAXIMUM of sidebar panel
-
-            //if (sideBarCollapse)
-            //{
-            //    flpSideBar.Height += 10;
-            //    if (flpSideBar.Height >= flpSideBar.MaximumSize.Height)
-            //    {
-            //        sideBarCollapse = true;
-            //        tmrSideBar.Stop();
-            //    }
-            //}
-            //else
-            //{
-            //    flpSideBar.Height -= 10;
-            //    if (flpSideBar.Height <= flpSideBar.MinimumSize.Height)
-            //    {
-            //        sideBarCollapse = false;
-            //        tmrSideBar.Stop();
-            //    }
-            //}
+            if (sideBarCollapse)
+            {
+                flpSideBar.Width += 10;
+                if (flpSideBar.Width >= flpSideBar.MaximumSize.Width)
+                {
+                    sideBarCollapse = false;
+                    tmrSideBar.Stop();
+                }
+            }
+            else
+            {
+                flpSideBar.Width -= 10;
+                if (flpSideBar.Width <= flpSideBar.MinimumSize.Width)
+                {
+                    sideBarCollapse = true;
+                    tmrSideBar.Stop();
+                }
+            }
         }
-
+        
         private void tmrTickHeight()
         {
             tmrInvoice.Stop();
@@ -169,45 +168,22 @@ namespace InvoiceCalculate
                 expenseCollapse = true;
             }
         }
-        private void tmrTickWidth()
-        {
-            // Collapse all panels
-            btnMainPage.Width = btnMainPage.MinimumSize.Width;
-
-            if (!invoiceCollapse)
-            {
-                flpInvoiceContainer.Width = flpInvoiceContainer.MinimumSize.Width;
-                invoiceCollapse = true;
-            }
-            if (!unreceiptedCollapse)
-            {
-                flpUnreceiptedContainer.Width = flpUnreceiptedContainer.MinimumSize.Width;
-                unreceiptedCollapse = true;
-            }
-            if (!expenseCollapse)
-            {
-                flpExpenseContainer.Width = flpExpenseContainer.MinimumSize.Width;
-                expenseCollapse = true;
-            }
-        }
 
         private void picMenu_Click(object sender, EventArgs e)
         {
             countSideBar++;
-            if (countSideBar % 2 == 0)
+            if (countSideBar % 2 == 1)
             {
-                tmrTickWidth();
+                tmrSideBar.Start();
+                btnDisabled();
                 tmrTickHeight();
                 btnDisable();
-                btnEnabled();
-                countSideBar = 0;
-                tmrSideBar.Stop();
             }
             else
             {
-                btnAbled();
-                //set time interval to lowest to make it smoother
                 tmrSideBar.Start();
+                btnAbled();
+                countSideBar = 0;
             }
             countHomePageClick = 0;
             countInvoiceClick = 0;
@@ -326,6 +302,11 @@ namespace InvoiceCalculate
                     timer.Stop();
                 }
             }
+        }
+
+        private void btnInArrange_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
