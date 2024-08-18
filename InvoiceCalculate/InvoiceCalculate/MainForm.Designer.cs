@@ -32,37 +32,38 @@
             this.flpSideBar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.flpInvoiceContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.flpUnreceiptedContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.flpExpenseContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.tmrSideBar = new System.Windows.Forms.Timer(this.components);
-            this.flpOptionBar = new System.Windows.Forms.FlowLayoutPanel();
-            this.tmrInvoice = new System.Windows.Forms.Timer(this.components);
-            this.tmrUnreceipted = new System.Windows.Forms.Timer(this.components);
-            this.tmrExpense = new System.Windows.Forms.Timer(this.components);
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnRestore = new System.Windows.Forms.Button();
-            this.btnMinimize = new System.Windows.Forms.Button();
             this.picMenu = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnMainPage = new FontAwesome.Sharp.IconButton();
+            this.flpInvoiceContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.btnInvoice = new FontAwesome.Sharp.IconButton();
             this.btnInArrange = new FontAwesome.Sharp.IconButton();
             this.btnInEdit = new FontAwesome.Sharp.IconButton();
+            this.flpUnreceiptedContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.btnUnreceipted = new FontAwesome.Sharp.IconButton();
             this.btnUnAdd = new FontAwesome.Sharp.IconButton();
             this.btnUnEdit = new FontAwesome.Sharp.IconButton();
+            this.flpExpenseContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.btnExpense = new FontAwesome.Sharp.IconButton();
             this.btnExCar = new FontAwesome.Sharp.IconButton();
             this.btnExHome = new FontAwesome.Sharp.IconButton();
             this.btnExOther = new FontAwesome.Sharp.IconButton();
             this.btnExEdit = new FontAwesome.Sharp.IconButton();
+            this.tmrSideBar = new System.Windows.Forms.Timer(this.components);
+            this.flpOptionBar = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnRestore = new System.Windows.Forms.Button();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.tmrInvoice = new System.Windows.Forms.Timer(this.components);
+            this.tmrUnreceipted = new System.Windows.Forms.Timer(this.components);
+            this.tmrExpense = new System.Windows.Forms.Timer(this.components);
             this.ıconDropDownButton1 = new FontAwesome.Sharp.IconDropDownButton();
             this.flpContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.flpSideBar.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMenu)).BeginInit();
             this.panel2.SuspendLayout();
             this.flpInvoiceContainer.SuspendLayout();
             this.flpUnreceiptedContainer.SuspendLayout();
@@ -70,7 +71,6 @@
             this.flpExpenseContainer.SuspendLayout();
             this.panel5.SuspendLayout();
             this.flpOptionBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // flpSideBar
@@ -87,7 +87,7 @@
             this.flpSideBar.MaximumSize = new System.Drawing.Size(180, 680);
             this.flpSideBar.MinimumSize = new System.Drawing.Size(50, 680);
             this.flpSideBar.Name = "flpSideBar";
-            this.flpSideBar.Size = new System.Drawing.Size(180, 680);
+            this.flpSideBar.Size = new System.Drawing.Size(50, 680);
             this.flpSideBar.TabIndex = 0;
             // 
             // panel1
@@ -110,150 +110,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "MENÜ";
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnMainPage);
-            this.panel2.Location = new System.Drawing.Point(3, 61);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(180, 44);
-            this.panel2.TabIndex = 1;
-            // 
-            // flpInvoiceContainer
-            // 
-            this.flpInvoiceContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.flpInvoiceContainer.Controls.Add(this.btnInvoice);
-            this.flpInvoiceContainer.Controls.Add(this.btnInArrange);
-            this.flpInvoiceContainer.Controls.Add(this.btnInEdit);
-            this.flpInvoiceContainer.Location = new System.Drawing.Point(3, 111);
-            this.flpInvoiceContainer.MaximumSize = new System.Drawing.Size(180, 120);
-            this.flpInvoiceContainer.MinimumSize = new System.Drawing.Size(180, 50);
-            this.flpInvoiceContainer.Name = "flpInvoiceContainer";
-            this.flpInvoiceContainer.Size = new System.Drawing.Size(180, 120);
-            this.flpInvoiceContainer.TabIndex = 5;
-            // 
-            // flpUnreceiptedContainer
-            // 
-            this.flpUnreceiptedContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.flpUnreceiptedContainer.Controls.Add(this.panel4);
-            this.flpUnreceiptedContainer.Controls.Add(this.btnUnAdd);
-            this.flpUnreceiptedContainer.Controls.Add(this.btnUnEdit);
-            this.flpUnreceiptedContainer.Location = new System.Drawing.Point(3, 237);
-            this.flpUnreceiptedContainer.MaximumSize = new System.Drawing.Size(180, 120);
-            this.flpUnreceiptedContainer.MinimumSize = new System.Drawing.Size(180, 50);
-            this.flpUnreceiptedContainer.Name = "flpUnreceiptedContainer";
-            this.flpUnreceiptedContainer.Size = new System.Drawing.Size(180, 50);
-            this.flpUnreceiptedContainer.TabIndex = 9;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnUnreceipted);
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(177, 44);
-            this.panel4.TabIndex = 3;
-            // 
-            // flpExpenseContainer
-            // 
-            this.flpExpenseContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.flpExpenseContainer.Controls.Add(this.panel5);
-            this.flpExpenseContainer.Controls.Add(this.btnExCar);
-            this.flpExpenseContainer.Controls.Add(this.btnExHome);
-            this.flpExpenseContainer.Controls.Add(this.btnExOther);
-            this.flpExpenseContainer.Controls.Add(this.btnExEdit);
-            this.flpExpenseContainer.Location = new System.Drawing.Point(3, 293);
-            this.flpExpenseContainer.MaximumSize = new System.Drawing.Size(180, 210);
-            this.flpExpenseContainer.MinimumSize = new System.Drawing.Size(180, 50);
-            this.flpExpenseContainer.Name = "flpExpenseContainer";
-            this.flpExpenseContainer.Size = new System.Drawing.Size(180, 50);
-            this.flpExpenseContainer.TabIndex = 10;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btnExpense);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(3, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(177, 43);
-            this.panel5.TabIndex = 4;
-            // 
-            // tmrSideBar
-            // 
-            this.tmrSideBar.Interval = 8;
-            this.tmrSideBar.Tick += new System.EventHandler(this.tmrSideBar_Tick);
-            // 
-            // flpOptionBar
-            // 
-            this.flpOptionBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
-            this.flpOptionBar.Controls.Add(this.btnClose);
-            this.flpOptionBar.Controls.Add(this.btnRestore);
-            this.flpOptionBar.Controls.Add(this.btnMinimize);
-            this.flpOptionBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flpOptionBar.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flpOptionBar.Location = new System.Drawing.Point(180, 0);
-            this.flpOptionBar.Name = "flpOptionBar";
-            this.flpOptionBar.Size = new System.Drawing.Size(800, 30);
-            this.flpOptionBar.TabIndex = 4;
-            // 
-            // tmrInvoice
-            // 
-            this.tmrInvoice.Interval = 8;
-            this.tmrInvoice.Tick += new System.EventHandler(this.tmrInvoice_Tick);
-            // 
-            // tmrUnreceipted
-            // 
-            this.tmrUnreceipted.Interval = 8;
-            this.tmrUnreceipted.Tick += new System.EventHandler(this.tmrUnreceipted_Tick);
-            // 
-            // tmrExpense
-            // 
-            this.tmrExpense.Interval = 8;
-            this.tmrExpense.Tick += new System.EventHandler(this.tmrExpense_Tick);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(44)))));
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnClose.Image = global::InvoiceCalculate.Properties.Resources.x_regular_24;
-            this.btnClose.Location = new System.Drawing.Point(757, 3);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(40, 25);
-            this.btnClose.TabIndex = 1;
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnRestore
-            // 
-            this.btnRestore.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnRestore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(44)))));
-            this.btnRestore.FlatAppearance.BorderSize = 0;
-            this.btnRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestore.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnRestore.Image = global::InvoiceCalculate.Properties.Resources.windows_regular_20;
-            this.btnRestore.Location = new System.Drawing.Point(711, 3);
-            this.btnRestore.Name = "btnRestore";
-            this.btnRestore.Size = new System.Drawing.Size(40, 25);
-            this.btnRestore.TabIndex = 2;
-            this.btnRestore.UseVisualStyleBackColor = false;
-            this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(44)))));
-            this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnMinimize.Image = global::InvoiceCalculate.Properties.Resources.minus_regular_24;
-            this.btnMinimize.Location = new System.Drawing.Point(665, 3);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(40, 25);
-            this.btnMinimize.TabIndex = 3;
-            this.btnMinimize.UseVisualStyleBackColor = false;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
             // picMenu
             // 
             this.picMenu.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -265,6 +121,14 @@
             this.picMenu.TabIndex = 0;
             this.picMenu.TabStop = false;
             this.picMenu.Click += new System.EventHandler(this.picMenu_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnMainPage);
+            this.panel2.Location = new System.Drawing.Point(3, 61);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(180, 44);
+            this.panel2.TabIndex = 1;
             // 
             // btnMainPage
             // 
@@ -287,6 +151,19 @@
             this.btnMainPage.Text = "ANA SAYFA";
             this.btnMainPage.UseVisualStyleBackColor = true;
             this.btnMainPage.Click += new System.EventHandler(this.btnMainPage_Click);
+            // 
+            // flpInvoiceContainer
+            // 
+            this.flpInvoiceContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
+            this.flpInvoiceContainer.Controls.Add(this.btnInvoice);
+            this.flpInvoiceContainer.Controls.Add(this.btnInArrange);
+            this.flpInvoiceContainer.Controls.Add(this.btnInEdit);
+            this.flpInvoiceContainer.Location = new System.Drawing.Point(3, 111);
+            this.flpInvoiceContainer.MaximumSize = new System.Drawing.Size(180, 120);
+            this.flpInvoiceContainer.MinimumSize = new System.Drawing.Size(180, 50);
+            this.flpInvoiceContainer.Name = "flpInvoiceContainer";
+            this.flpInvoiceContainer.Size = new System.Drawing.Size(180, 50);
+            this.flpInvoiceContainer.TabIndex = 5;
             // 
             // btnInvoice
             // 
@@ -349,12 +226,33 @@
             this.btnInEdit.Location = new System.Drawing.Point(3, 89);
             this.btnInEdit.Name = "btnInEdit";
             this.btnInEdit.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.btnInEdit.Size = new System.Drawing.Size(177, 30);
+            this.btnInEdit.Size = new System.Drawing.Size(177, 31);
             this.btnInEdit.TabIndex = 8;
             this.btnInEdit.Text = "FATURA DÜZENLE";
             this.btnInEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnInEdit.UseVisualStyleBackColor = true;
+            // 
+            // flpUnreceiptedContainer
+            // 
+            this.flpUnreceiptedContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
+            this.flpUnreceiptedContainer.Controls.Add(this.panel4);
+            this.flpUnreceiptedContainer.Controls.Add(this.btnUnAdd);
+            this.flpUnreceiptedContainer.Controls.Add(this.btnUnEdit);
+            this.flpUnreceiptedContainer.Location = new System.Drawing.Point(3, 167);
+            this.flpUnreceiptedContainer.MaximumSize = new System.Drawing.Size(180, 120);
+            this.flpUnreceiptedContainer.MinimumSize = new System.Drawing.Size(180, 50);
+            this.flpUnreceiptedContainer.Name = "flpUnreceiptedContainer";
+            this.flpUnreceiptedContainer.Size = new System.Drawing.Size(180, 50);
+            this.flpUnreceiptedContainer.TabIndex = 9;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnUnreceipted);
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(177, 44);
+            this.panel4.TabIndex = 3;
             // 
             // btnUnreceipted
             // 
@@ -422,6 +320,30 @@
             this.btnUnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUnEdit.UseVisualStyleBackColor = true;
+            // 
+            // flpExpenseContainer
+            // 
+            this.flpExpenseContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
+            this.flpExpenseContainer.Controls.Add(this.panel5);
+            this.flpExpenseContainer.Controls.Add(this.btnExCar);
+            this.flpExpenseContainer.Controls.Add(this.btnExHome);
+            this.flpExpenseContainer.Controls.Add(this.btnExOther);
+            this.flpExpenseContainer.Controls.Add(this.btnExEdit);
+            this.flpExpenseContainer.Location = new System.Drawing.Point(3, 223);
+            this.flpExpenseContainer.MaximumSize = new System.Drawing.Size(180, 210);
+            this.flpExpenseContainer.MinimumSize = new System.Drawing.Size(180, 50);
+            this.flpExpenseContainer.Name = "flpExpenseContainer";
+            this.flpExpenseContainer.Size = new System.Drawing.Size(180, 50);
+            this.flpExpenseContainer.TabIndex = 10;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btnExpense);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(3, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(177, 43);
+            this.panel5.TabIndex = 4;
             // 
             // btnExpense
             // 
@@ -534,6 +456,84 @@
             this.btnExEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExEdit.UseVisualStyleBackColor = true;
             // 
+            // tmrSideBar
+            // 
+            this.tmrSideBar.Interval = 8;
+            this.tmrSideBar.Tick += new System.EventHandler(this.tmrSideBar_Tick);
+            // 
+            // flpOptionBar
+            // 
+            this.flpOptionBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(48)))));
+            this.flpOptionBar.Controls.Add(this.btnClose);
+            this.flpOptionBar.Controls.Add(this.btnRestore);
+            this.flpOptionBar.Controls.Add(this.btnMinimize);
+            this.flpOptionBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flpOptionBar.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flpOptionBar.Location = new System.Drawing.Point(50, 0);
+            this.flpOptionBar.Name = "flpOptionBar";
+            this.flpOptionBar.Size = new System.Drawing.Size(930, 30);
+            this.flpOptionBar.TabIndex = 4;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(44)))));
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnClose.Image = global::InvoiceCalculate.Properties.Resources.x_regular_24;
+            this.btnClose.Location = new System.Drawing.Point(887, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(40, 25);
+            this.btnClose.TabIndex = 1;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnRestore
+            // 
+            this.btnRestore.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnRestore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(44)))));
+            this.btnRestore.FlatAppearance.BorderSize = 0;
+            this.btnRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestore.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRestore.Image = global::InvoiceCalculate.Properties.Resources.windows_regular_20;
+            this.btnRestore.Location = new System.Drawing.Point(841, 3);
+            this.btnRestore.Name = "btnRestore";
+            this.btnRestore.Size = new System.Drawing.Size(40, 25);
+            this.btnRestore.TabIndex = 2;
+            this.btnRestore.UseVisualStyleBackColor = false;
+            this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(44)))));
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMinimize.Image = global::InvoiceCalculate.Properties.Resources.minus_regular_24;
+            this.btnMinimize.Location = new System.Drawing.Point(795, 3);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(40, 25);
+            this.btnMinimize.TabIndex = 3;
+            this.btnMinimize.UseVisualStyleBackColor = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // tmrInvoice
+            // 
+            this.tmrInvoice.Interval = 8;
+            ///////////this.tmrInvoice.Tick += new System.EventHandler(this.tmrInvoice_Tick);
+            // 
+            // tmrUnreceipted
+            // 
+            this.tmrUnreceipted.Interval = 8;
+            //////////this.tmrUnreceipted.Tick += new System.EventHandler(this.tmrUnreceipted_Tick);
+            // 
+            // tmrExpense
+            // 
+            this.tmrExpense.Interval = 8;
+            ////////this.tmrExpense.Tick += new System.EventHandler(this.tmrExpense_Tick);
+            // 
             // ıconDropDownButton1
             // 
             this.ıconDropDownButton1.IconChar = FontAwesome.Sharp.IconChar.None;
@@ -546,9 +546,9 @@
             // flpContainer
             // 
             this.flpContainer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flpContainer.Location = new System.Drawing.Point(180, 30);
+            this.flpContainer.Location = new System.Drawing.Point(50, 30);
             this.flpContainer.Name = "flpContainer";
-            this.flpContainer.Size = new System.Drawing.Size(800, 650);
+            this.flpContainer.Size = new System.Drawing.Size(930, 650);
             this.flpContainer.TabIndex = 5;
             // 
             // MainForm
@@ -566,6 +566,7 @@
             this.flpSideBar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMenu)).EndInit();
             this.panel2.ResumeLayout(false);
             this.flpInvoiceContainer.ResumeLayout(false);
             this.flpUnreceiptedContainer.ResumeLayout(false);
@@ -573,7 +574,6 @@
             this.flpExpenseContainer.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.flpOptionBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picMenu)).EndInit();
             this.ResumeLayout(false);
 
         }
