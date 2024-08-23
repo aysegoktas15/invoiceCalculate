@@ -301,25 +301,29 @@ namespace InvoiceCalculate
 
 
 
-        // Event handler for invoice button
+        #region Event handler for invoice button
         private void btnInvoice_Click(object sender, EventArgs e)
         {
             HandleButtonClick(ref countInvoiceClick, tmrInvoice, flpInvoiceContainer, ref invoiceCollapse, RGBColors.color1, (IconButton)sender);
         }
+        #endregion
 
-        // Event handler for unreceipted button
+        #region Event handler for unreceipted button
         private void btnUnreceipted_Click(object sender, EventArgs e)
         {
             HandleButtonClick(ref countUnreceiptedClick, tmrUnreceipted, flpUnreceiptedContainer, ref unreceiptedCollapse, RGBColors.color2, (IconButton)sender);
         }
+        #endregion
 
-        // Event handler for expense button
+        #region Event handler for expense button
         private void btnExpense_Click(object sender, EventArgs e)
         {
             HandleButtonClick(ref countExpenseClick, tmrExpense, flpExpenseContainer, ref expenseCollapse, RGBColors.color3, (IconButton)sender);
         }
+        #endregion
 
-        // Timer tick event handler for collapsing/expanding panels
+
+        #region  Event handler timer tick for collapsing/expanding panels
         private void TogglePanel(ref bool collapse, FlowLayoutPanel panel, Timer timer)
         {
             if (collapse)
@@ -341,6 +345,8 @@ namespace InvoiceCalculate
                 }
             }
         }
+
+        #endregion
 
 
 

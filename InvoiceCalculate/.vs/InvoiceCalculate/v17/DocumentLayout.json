@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{8F19795C-0C16-4886-9653-EA7E15E069BE}|InvoiceCalculate\\InvoiceCalculate.csproj|solutionrelative:invoicecalculate\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F19795C-0C16-4886-9653-EA7E15E069BE}|InvoiceCalculate\\InvoiceCalculate.csproj|d:\\0_ayse_goktas_\\01-desktopfiles\\02-works\\01-software\\02-projects\\05-invoicecalculate\\invoicecalculate\\invoicecalculate\\invoicecalculate\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8F19795C-0C16-4886-9653-EA7E15E069BE}|InvoiceCalculate\\InvoiceCalculate.csproj|D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\05-InvoiceCalculate\\invoiceCalculate\\InvoiceCalculate\\invoicecalculate\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F19795C-0C16-4886-9653-EA7E15E069BE}|InvoiceCalculate\\InvoiceCalculate.csproj|solutionrelative:invoicecalculate\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -38,8 +38,7 @@
               "RelativeToolTip": "InvoiceCalculate\\MainForm.Designer.cs",
               "ViewState": "AQIAAAMCAAAAAAAAAAAewAwCAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T10:03:03.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-18T10:03:03.234Z"
             },
             {
               "$type": "Document",
@@ -49,7 +48,7 @@
               "RelativeDocumentMoniker": "InvoiceCalculate\\MainForm.cs",
               "ToolTip": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\05-InvoiceCalculate\\invoiceCalculate\\InvoiceCalculate\\InvoiceCalculate\\MainForm.cs",
               "RelativeToolTip": "InvoiceCalculate\\MainForm.cs",
-              "ViewState": "AQIAAIgAAAAAAAAAAAAwwJYAAAAuAAAA",
+              "ViewState": "AQIAACcBAAAAAAAAAAAowDUBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T10:28:39.315Z",
               "EditorCaption": ""
@@ -63,8 +62,7 @@
               "ToolTip": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\05-InvoiceCalculate\\invoiceCalculate\\InvoiceCalculate\\InvoiceCalculate\\InvoiceArrangeForm.cs [Design]",
               "RelativeToolTip": "InvoiceCalculate\\InvoiceArrangeForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T10:35:07.716Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-18T10:35:07.716Z"
             },
             {
               "$type": "Document",
@@ -75,8 +73,7 @@
               "ToolTip": "D:\\0_AYSE_GOKTAS_\\01-DESKTOPFILES\\02-WORKS\\01-SOFTWARE\\02-PROJECTS\\05-InvoiceCalculate\\invoiceCalculate\\InvoiceCalculate\\InvoiceCalculate\\MainForm.cs [Design]",
               "RelativeToolTip": "InvoiceCalculate\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T10:17:40.959Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-18T10:17:40.959Z"
             }
           ]
         }
