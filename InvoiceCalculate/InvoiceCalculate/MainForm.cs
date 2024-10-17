@@ -55,7 +55,12 @@ namespace InvoiceCalculate
         #endregion
 
         // Methods
-        #region Method to activate a button and update the left border
+        #region btnActive
+        /// <summary>
+        /// Method to activate a button and update the left border
+        /// </summary>
+        /// <param name="btnSender"></param>
+        /// <param name="color"></param>
         private void btnActive(object btnSender, Color color)
         {
             if (btnSender != null)
@@ -79,7 +84,10 @@ namespace InvoiceCalculate
         }
         #endregion
 
-        #region Method to disable button style
+        #region btnDisable
+        /// <summary>
+        /// Method to disable button style
+        /// </summary>
         private void btnDisable()
         {
             if (btnCurrent != null)
@@ -94,7 +102,10 @@ namespace InvoiceCalculate
         }
         #endregion
 
-        #region Method to enable all buttons
+        #region btnAbled
+        /// <summary>
+        /// Method to enable all buttons
+        /// </summary>
         private void btnAbled()
         {
             btnMainPage.Enabled = true;
@@ -104,7 +115,10 @@ namespace InvoiceCalculate
         }
         #endregion
 
-        #region Method to disable all buttons
+        #region btnDisabled
+        /// <summary>
+        /// Method to disable all buttons
+        /// </summary>
         private void btnDisabled()
         {
             btnMainPage.Enabled = false;
@@ -142,13 +156,8 @@ namespace InvoiceCalculate
         #region Method to handle just a button 
         private void HandleButton(IconButton clickedButton, Color activeColor)
         {
-            // Önceki seçili butonu devre dışı bırak
             btnDisable();
-
-            // Tıklanan butonu etkinleştir
             btnActive(clickedButton, activeColor);
-
-            // Diğer panel işlemlerini sıfırla
             ResetCounters();
         }
         #endregion
@@ -177,7 +186,10 @@ namespace InvoiceCalculate
         }
         #endregion
 
-        #region Method to reset all counters
+        #region ResetCounters
+        /// <summary>
+        /// Method to reset all counters
+        /// </summary>
         private void ResetCounters()
         {
             countHomePageClick = 0;
@@ -323,7 +335,13 @@ namespace InvoiceCalculate
         #endregion
 
 
-        #region  Event handler timer tick for collapsing/expanding panels
+        #region  TogglePanel
+        /// <summary>
+        /// Event handler timer tick for collapsing/expanding panels
+        /// </summary>
+        /// <param name="collapse"></param>
+        /// <param name="panel"></param>
+        /// <param name="timer"></param>
         private void TogglePanel(ref bool collapse, FlowLayoutPanel panel, Timer timer)
         {
             if (collapse)
